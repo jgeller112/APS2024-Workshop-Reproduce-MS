@@ -26,9 +26,15 @@ When writing the body of your document, you will use the [Markdown](https://dari
 
 > Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. - [*Markdown Guide*](https://www.markdownguide.org/getting-started/)
 
+## Markdown
+
+![](https://psy503-f2023.netlify.app/slides/03-rmd-quarto/images/Screen%20Shot%202023-09-14%20at%2010.34.26%20AM.png)
+
 . . .
 
-When you render your Quarto document, Quarto converts the Markdown-formatted text into HTML, LaTeX, etc., depending on the output format you chose.
+## Introduction
+
+Welcome to my **awesome** class. You will learn all kinds of useful things about R markdown.
 
 ## Learning Markdown
 

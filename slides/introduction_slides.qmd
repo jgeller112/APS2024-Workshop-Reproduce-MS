@@ -18,19 +18,26 @@ format:
 
 # Introduction
 
+-   Click on the link or scan the barcode to access slides and exercises
+
 <center>
 
 {{< qrcode https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/ >}}
 
 </center>
 
+<https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/>
+
 ## Packages
 
--   If you want to render to pdf make sure to ihave `tinytex` installed
+::: callout-important
+-   You should also have Zotero installed (or some reference manager)
+
+-   Along with the packages below
+:::
 
 ```{r}
 #| echo: true
-
 library(palmerpenguins)
 library(quarto)
 library(tidyverse)
