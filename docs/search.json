@@ -283,8 +283,8 @@
     "objectID": "slides/introduction_slides.html#packages",
     "href": "slides/introduction_slides.html#packages",
     "title": "Reproducible Manuscripts in R",
-    "section": "Packages",
-    "text": "Packages\n\nlibrary(palmerpenguins) # penguins\nlibrary(quarto) # qmd \nlibrary(rmarkdown) # markdown\nlibrary(tidyverse) # data wrangling\n\n\ninstall.packages('tinytex') # for use with pdf \ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex()"
+    "section": "",
+    "text": "library(palmerpenguins) # penguins\nlibrary(quarto) # qmd \nlibrary(rmarkdown) # markdown\nlibrary(tidyverse) # data wrangling\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\ninstall.packages('tinytex') # for use with pdf \ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex()"
   },
   {
     "objectID": "slides/introduction_slides.html#word",
@@ -305,7 +305,7 @@
     "href": "slides/introduction_slides.html#word-issues",
     "title": "Reproducible Manuscripts in R",
     "section": "Word issues",
-    "text": "Word issues\n\nA .docx file is a compressed folder with lots of files\n\nYour text is buried in with a lot of formatting information\n\n\n\n\nNot reproducible\n\nCode is divorced from writing\n\nDifficult to maintain\n\nErrors!\n\nWhat do I share?\n\nLack of transparency"
+    "text": "Word issues\n\nA .docx file is a compressed folder with lots of files\n\nYour text is buried in with a lot of formatting information\n\n\n. . .\n\nNot reproducible\n\nCode is divorced from writing\n\nDifficult to maintain\n\nErrors!\n\nWhat do I share?\n\nLack of transparency"
   },
   {
     "objectID": "slides/introduction_slides.html#what-do-we-want",
@@ -354,7 +354,7 @@
     "href": "slides/introduction_slides.html#getting-started",
     "title": "Reproducible Manuscripts in R",
     "section": "Getting started",
-    "text": "Getting started\n\nApproach 1: Start from scratch (now)\n\nCreating a Quarto manuscript\n\nRStudio: New Project &gt; New Directory &gt; Quarto Manuscript\n\n\n\n\n\n\n\n\nNote\n\n\nAlways start a new project folder!\n\n\n\nApproach 2: Start with a sample template (later)"
+    "text": "Getting started\n\nApproach 1: Start from scratch (now)\n\nCreating a Quarto manuscript\n\nRStudio: New Project &gt; New Directory &gt; Quarto Manuscript\n\n\n\n\n\n\n\n\nNote\n\n\n\nAlways start a new project folder!\n\n\nApproach 2: Start with a sample template (later)"
   },
   {
     "objectID": "slides/introduction_slides.html#getting-started-1",
@@ -396,7 +396,7 @@
     "href": "slides/introduction_slides.html#text",
     "title": "Reproducible Manuscripts in R",
     "section": "Text",
-    "text": "Text\n# Heading 1\nThis is a sentence with some **bold text**, \nsome *italic text* and \nan [image](image.png).\n\n\n\nAPS 2024"
+    "text": "Text\n# Heading 1\nThis is a sentence with some **bold text**, \nsome *italic text* and \nan [image](image.png)."
   },
   {
     "objectID": "slides/writing_slides.html#markdown-syntax",
@@ -544,5 +544,12 @@
     "title": "MIT License",
     "section": "",
     "text": "MIT License\nCopyright (c) 2023 my-reproducible-manuscript authors\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "slides/introduction_slides.html",
+    "href": "slides/introduction_slides.html",
+    "title": "Reproducible Manuscripts in R",
+    "section": "",
+    "text": "Click on the link or scan the bar code to access slides and exercises\n\n\n\n\n    \n\nhttps://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/\n\n\n\nlibrary(palmerpenguins) # penguins\nlibrary(quarto) # qmd \nlibrary(rmarkdown) # markdown\nlibrary(tidyverse) # data wrangling\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\ninstall.packages('tinytex') # for use with pdf \ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex()"
   }
 ]
