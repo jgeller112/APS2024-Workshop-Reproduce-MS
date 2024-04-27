@@ -1,0 +1,150 @@
+---
+format:
+  revealjs:
+    theme: night
+    embed-resources: true
+    slide-number: true
+    navigation-mode: linear
+    controls: true
+    fontsize: "32pt"
+---
+
+# Rendering {background-color="#FFCD00"}
+
+# Output Formats
+
+Quarto provides the following output formats:
+
+-   HTML
+
+-   PDF
+
+-   MS Word (`docx`)
+
+-   OpenOffice (`odt`)
+
+-   ePub
+
+## How To Render
+
+**1. In RStudio**:
+
+Click the *Render* button OR use the `quarto` R package:
+
+```{r}
+#| eval: false
+#| echo: true
+library(quarto)
+quarto_render("my-reproducible-manuscript.qmd") # defaults to html
+quarto_render("my-reproducible-manuscript.qmd", output_format = "pdf")
+```
+
+<br>
+
+**2. Terminal**: `quarto render` (`--to [output format]`)
+
+```{bash}
+#| eval: false
+#| echo: true
+quarto render
+quarto render my-reproducible-manuscript.qmd # defaults to html
+quarto render my-reproducible-manuscript.qmd --to pdf
+```
+
+## Rendering to Multiple Formats
+
+```{yaml}
+#| eval: false
+#| echo: true
+---
+title: "My Reproducible Manuscript"
+format: 
+  html: default
+  docx: default
+  pdf: default
+---
+```
+
+Then:
+
+```{r}
+#| eval: false
+#| echo: true
+library(quarto)
+quarto_render("my-reproducible-manuscript.qmd")
+```
+
+OR
+
+```{bash}
+#| eval: false
+#| echo: true
+quarto render my-reproducible-manuscript.qmd
+```
+
+You don't have to run separate commands with the `--to` flag.
+
+**Note:** the *Render* button will not work for multiple formats.
+
+## Journal Formats
+
+Besides default `html`/`pdf`/`docx`, Quarto offers journal templates. See also [Quarto Documentation: Journals](https://quarto.org/docs/journals/).
+
+-   `acm`: Association of Computing Machinery (ACM)
+-   `plos`: Public Library of Science (PLOS)
+-   `agu`: American Geophysical Union (AGU)
+-   `elsevier`: Elsevier
+-   `biophysical-journal`: Biophysical
+-   `acs`: American Chemical Society (ACS)
+-   `jss`: Journal of Statistical Software (JSS)
+
+## APA - `apaquarto`
+
+Use a journal template **from the start of your project** (will create a new document):
+
+```{r}
+#| eval: false
+
+quarto::quarto_use_template("wjschne/apaquarto")
+
+```
+
+-   In console
+
+```{bash}
+#| eval: false
+#| echo: true
+quarto use template quarto-journals/<template-name>
+```
+
+<br>
+
+For example:
+
+```{bash}
+#| eval: false
+#| echo: true
+quarto use template wjschne/apaquarto
+
+```
+
+## APA - `apaquarto`
+
+![](https://github.com/wjschne/apaquarto/raw/main/img/docx.png){fig-align="center"}
+
+## APA - `apaquarto`
+
+![](https://github.com/wjschne/apaquarto/raw/main/img/journalmode.png){fig-align="center"}
+
+## Exercise
+
+Go to the *Rendering* chapter in the workshop book and refer to the instructions in the *Exercise* section.
+
+You will render your document into html and docx formats.
+
+```{r}
+library(countdown)
+
+countdown(minutes = 10,
+          color_background = "#FFCD00")
+```

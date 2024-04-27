@@ -1,0 +1,161 @@
+---
+title: "Reproducible Manuscripts in R "
+subtitle: "Princeton University"
+author: "Jason Geller, PH.D.(he/him)"
+date: 'Updated:`r Sys.Date()`'
+footer: "APS 2024"
+format:
+  revealjs:
+    theme: night
+    embed-resources: true
+    slide-number: true
+    navigation-mode: linear
+    controls: true
+    incremental: true
+    code-overflow: wrap
+    fontsize: "32pt"
+---
+
+# Introduction
+
+{{< qrcode https://jmbuhr.de >}}
+
+# The Problem
+
+## Word
+
+::: columns
+::: {.column width="50%"}
+![](images/clipboard-1310471532.png){width="472"}
+:::
+
+::: {.column width="50%"}
+![](img/word_document_surface.png){fig-align="center"}
+:::
+:::
+
+## Inside
+
+![](img/word_document_inside.png){fig-align="center"}
+
+## Word issues
+
+-   A .docx file is a compressed folder with lots of files
+    -   Your text is buried in with a lot of formatting information
+
+. . .
+
+-   Not reproducible
+    -   Code is divorced from writing
+-   Difficult to maintain
+    -   Errors!
+-   What do I share?
+    -   Lack of transparency
+
+## What do we want?
+
+-   Combine narrative with code
+
+-   Automatically generate figures and tables
+
+-   Automatically render results in text
+
+-   Format the content into a scientific paper (including citations!)
+
+-   Something that looks pretty!
+
+-   Rinse & repeat
+
+# Hello Quarto!
+
+-   Quarto is the next generation of RMarkdown
+
+## Big universe
+
+-   RMarkdown for EVERYONE
+
+![](img/horst_quarto_schematic.png){fig-align="center"}
+
+## What is a Quarto?
+
+![](https://psy504-advanced-stats.netlify.app/slides/quarto/samplesheet.jpeg){fig-align="center"}
+
+## Advantages
+
+**(1) Eliminate human error in copying and pasting results**
+
+*We found that half of all published psychology papers that use null-hypothesis significance testing (NHST) contained at least one p-value that was inconsistent with its test statistic and degrees of freedom. One in eight papers contained a grossly inconsistent p-value that may have affected the statistical conclusion* *([Nuijten et al., 2016](https://doi.org/10.3758/s13428-015-0664-2))*
+
+## Advantages
+
+**(2) Easy revisions and specification of desired figures and tables**
+
+*When revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper.*
+
+## Advantages
+
+**(3) Promote computational reproducibility**
+
+-   Easy verification and replication of research findings
+
+-   While programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time.
+
+# Let's Get Started!
+
+## Getting started
+
+-   Approach 1: Start from scratch (now)
+
+    -   Creating a Quarto manuscript
+
+        -   RStudio: New Project \> New Directory \> Quarto Manuscript
+
+-   ::: callout-note
+    Always start a new project folder!
+    :::
+
+-   Approach 2: Start with a sample template (later)
+
+## Getting started
+
+-   Let's go to RStudio!
+
+## Output
+
+![](images/quarto-default-template.PNG){fig-align="center"}
+
+## Anatomy of a Quarto Document {.scrollable}
+
+## **Metadata & Header (YAML)**
+
+``` yaml
+---
+format: html
+---
+```
+
+-   Wait... what's the YAML acronym?
+
+    -   Originally: "Yet Another Markup Language"
+
+    -   Later: "YAML Ain't Markup Language"
+
+## **Code**
+
+```{r}
+#| echo: fenced
+#| eval: true
+library(dplyr)
+mtcars %>% 
+  group_by(cyl) %>%
+  summarize(mean = mean(mpg), .groups = "drop")
+```
+
+## **Text**
+
+``` markdown
+# Heading 1
+This is a sentence with some **bold text**, 
+some *italic text* and 
+an [image](image.png).
+```

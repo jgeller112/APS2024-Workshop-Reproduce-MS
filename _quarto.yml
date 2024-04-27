@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "APS 2024 Workshop: Reproducible Manuscripts in R"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: slides/introduction.qmd
+        text: Introduction
+      - href: slides/markdown-syntax.qmd
+        text: Writing/References
+      - href: slides/code-chunks.qmd
+        text: Analysis
+      - href: slides/rendering.qmd
+        text: Rendering
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
+
+editor: visual
+

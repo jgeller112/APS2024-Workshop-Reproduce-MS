@@ -1,0 +1,280 @@
+---
+format:
+  revealjs:
+    theme: night
+    embed-resources: true
+    slide-number: true
+    navigation-mode: linear
+    controls: true
+    code-overflow: wrap
+    incremental: true
+    fontsize: "32pt"
+---
+
+# Analysis {background-color="#FFCD00"}
+
+# Topics
+
+1.  Code Chunks
+2.  Inline Code
+3.  Sourcing Scripts
+
+# Code Chunks {background-color="#FFCD00"}
+
+## What are Code Chunks? {.smaller}
+
+-   Specified place for code
+-   Executable
+-   Weaved between between text
+-   May print output or create new variables, for example
+
+<br>
+
+. . .
+
+```{{{r}}}
+#| echo: true
+1993 + 2023
+```
+
+```{r}
+#| echo: false
+1993 + 2023
+```
+
+## Anatomy of a Code Chunk
+
+::: columns
+::: {.column width="50%"}
+1.  On each end of the code chunk: 3 *backticks*: ```` ``` ```` \*\*
+2.  Curly brackets: *engine*: `{r}` or `{python}` \*\*
+3.  Top of chunk: Code chunk options, with *hashpipe*: `#|`
+:::
+
+::: {.column width="50%"}
+```` md
+```{{r}}
+#| label: cars-r
+#| echo: false
+mtcars %>% 
+  distinct(cyl)
+```
+````
+
+<br>
+
+```` md
+```{{python}}
+#| label: car-py
+#| echo: false
+distinct_cyl = mtcars.drop_duplicates(subset=['cyl'])
+```
+````
+:::
+:::
+
+\*\* *not needed in a code cell in a Jupyter notebook!*
+
+## Code Chunk Options {.smaller}
+
+Useful [code chunk options](https://quarto.org/docs/computations/execution-options.html):
+
+-   `#| eval: true`: Evaluates code chunk.
+-   `#| echo: true`: Includes source code in output.
+-   `#| output: true`: Includes *results* of code execution in output.
+-   `#| warning: true`: Includes warnings in output.
+-   `#| include: false`: Catch all for preventing anything from being included.
+-   `#| label: something-meaningful`: Good practice to always include!
+
+. . .
+
+Options for figure-creating code chunks:
+
+-   `#| fig-cap: "your figure's caption"` : caption of the figure
+-   `#| fig-width: 8` : width of the figure
+-   `#| fig-height: 6` : height of the figure
+
+## Code Chunk Options
+
+Options for *all* code chunks: include in `yaml` (top of the document).
+
+. . .
+
+For example...
+
+``` yaml
+---
+format: html
+execute:
+  echo: false
+---
+```
+
+... hides all code in the output!
+
+## Inserting Code Chunks
+
+Option 1: Type it out
+
+. . .
+
+Option 2: Visual editor: `Insert` \> `Code cell`
+
+. . .
+
+Option 3: Shortcuts:
+
+-   **RStudio**: *Ctrl+Alt+I*
+-   **VS Code**: *Ctrl+Shift+I*
+-   **Jupyter Lab**: *B*
+
+## Exercise
+
+Go to the analysis section on the website do the exercise.
+
+You will be pasting some code from a `dummy` script into code chunks in your document!
+
+```{r}
+library(countdown)
+
+countdown(minutes = 15,
+          color_background = "#FFCD00")
+```
+
+# Inline Code {background-color="#FFCD00"}
+
+## Inline code: what & why?
+
+Insert results or (quick) calculations into running text, without additional text formatting. <br>
+
+. . .
+
+Why?
+
+-   report and describe results reproducibly
+-   minimizes errors: no manual copy-pasting results
+-   automatic updating when data or code changes
+
+## Inline code: how?
+
+**In R**
+
+```{r}
+#| label: Load the penguins dataset
+#| echo: false
+library(palmerpenguins)
+```
+
+``` md
+There are `r knitr::inline_expr("sum(penguins$Species=='Adelie')")` 
+penguins of the Adelie species in the dataset.
+```
+
+``` md
+There are `r sum(penguins$species=="Adelie")` penguins of the "Adelie" species in the dataset.
+```
+
+<br>
+
+**In Python (Quarto \>= 1.4)**[^1]
+
+[^1]: **Jupyter notebooks: also add `execute: enable: all` to the document yaml.**
+
+```{{{python}}}
+x = 5 + 5
+```
+
+``` md
+The answer to 5 + 5 is `{python} x`
+```
+
+## Exercise
+
+Take a couple of minutes to play around with the possibilities of *inline code*!
+
+Go to the *Inline code* chapter in the workshop book to complete the exercise.
+
+```{r}
+library(countdown)
+
+countdown(minutes = 10,
+          color_background = "#FFCD00")
+```
+
+# Sourcing Scripts {background-color="#FFCD00"}
+
+## Sourcing external files: what & why?
+
+For example: R and Python scripts, `.qmd` or `.ipynb` files.
+
+<br>
+
+Why separate scripts from the manuscript?
+
+-   minimizes errors: no manual copy-pasting code
+-   easier code debugging
+-   making the Quarto document easier to digest
+-   modular coding = good coding practice
+
+## Sourcing external files: how? {.smaller}
+
+`.qmd` files: use the chunk option `#| file: "your-script.ext"`.\
+`.ipynb files`: import the script as module or run it.
+
+. . .
+
+::: columns
+::: {.column width="50%"}
+**R:**
+
+```{{{r}}}
+#| file: "your-script.R"
+#| eval: true 
+```
+:::
+
+::: {.column width="50%"}
+**Python:** <!-- I think this can be excluded but not sure so I'll leave commented
+````
+```{{.python include="your-script.py"}}
+```
+````
+
+followed by
+-->
+
+```{{{python}}}
+#| echo: false
+%run your-script.py
+```
+
+<br> **Or**: Add an empty `__init__.py` file to your scripts folder and run:
+
+```{{{python}}}
+#| echo: false
+from your-script import function
+```
+:::
+:::
+
+## Exercise
+
+The `workshop-materials` contain 2 example scripts: `do_addition.R` and `do_addition.py`. You will use one of them to include the code in your Quarto document.
+
+Go to the *Sourcing code* chapter in the workshop book and complete the exercise!
+
+```{r}
+library(countdown)
+
+countdown(minutes = 10,
+          color_background = "#FFCD00")
+```
+
+## Other options
+
+Other options not discussed here:
+
+1.  Use [*parts of* an external script](https://github.com/quarto-ext/include-code-files) within the Quarto document, for example to only run a few selected lines.
+2.  Run a script before or after rendering a Quarto document to a manuscript: [Quarto Docs: Project Scripts](https://quarto.org/docs/projects/scripts.html)
+3.  Use code chunks from existing Quarto documents or Jupyter notebooks: [Quarto v1.4 Release](https://cwickham.github.io/whats-new-in-quarto/#/embed-outputs-from-other-documents-1)
+4.  Include entire Quarto documents or Jupyter notebooks within your current Quarto document: [Quarto Docs: Includes](https://quarto.org/docs/authoring/includes.html)
