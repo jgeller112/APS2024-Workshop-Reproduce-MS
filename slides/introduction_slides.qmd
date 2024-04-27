@@ -11,14 +11,14 @@ format:
     slide-number: true
     navigation-mode: linear
     controls: true
-    incremental: true
+    incremental: false
     code-overflow: wrap
     fontsize: "32pt"
 ---
 
 # Introduction
 
--   Click on the link or scan the barcode to access slides and exercises
+-   Click on the link or scan the bar code to access slides and exercises
 
 <center>
 
@@ -30,24 +30,19 @@ format:
 
 ## Packages
 
-::: callout-important
--   You should also have Zotero installed (or some reference manager)
-
--   Along with the packages below
-:::
-
 ```{r}
 #| echo: true
-library(palmerpenguins)
-library(quarto)
-library(tidyverse)
+library(palmerpenguins) # penguins
+library(quarto) # qmd 
+library(rmarkdown) # markdown
+library(tidyverse) # data wrangling
 ```
 
 ```{r}
 #| eval: false
 #| echo:  true
 #| 
-install.packages('tinytex')
+install.packages('tinytex') # for use with pdf 
 tinytex::install_tinytex()
 # to uninstall TinyTeX, run tinytex::uninstall_tinytex() 
 ```
