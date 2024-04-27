@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "APS 2024 Workshop: Reproducible Manuscripts in R"
