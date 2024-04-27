@@ -333,7 +333,7 @@
     "href": "slides/introduction_slides.html#metadata-header-yaml",
     "title": "Reproducible Manuscripts in R",
     "section": "Metadata & Header (YAML)",
-    "text": "Metadata & Header (YAML)\n---\nformat: html\n---\n\nWait… what’s the YAML acronym?\n\nOriginally: “Yet Another Markup Language”\nLater: “YAML Ain’t Markup Language”"
+    "text": "Metadata & Header (YAML)\n---\nformat: html\n---\n\nWait… what’s the YAML acronym?\n\nOriginally: “Yet Another Markup Language”\nLater: “YAML Ain’t Markup Language”\n\nSet global manuscript options with key-value pairs"
   },
   {
     "objectID": "slides/introduction_slides.html#code",
@@ -474,5 +474,12 @@
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
     "section": "Exercise",
     "text": "Exercise\nGo to the Referencing section on the website and refer to the instructions in the Exercise section.\nYou will go through the workflow of creating a .bib file that will be automatically updated by Zotero and integrating it with your Quarto document.\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/introduction_slides.html#packages",
+    "href": "slides/introduction_slides.html#packages",
+    "title": "Reproducible Manuscripts in R",
+    "section": "Packages",
+    "text": "Packages\n\nIf you want to render to pdf make sure to ihave tinytex installed\n\n\nlibrary(palmerpenguins)\nlibrary(quarto)\nlibrary(tidyverse)\n\n\ninstall.packages('tinytex')\ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex()"
   }
 ]

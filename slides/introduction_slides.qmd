@@ -24,6 +24,27 @@ format:
 
 </center>
 
+## Packages
+
+-   If you want to render to pdf make sure to ihave `tinytex` installed
+
+```{r}
+#| echo: true
+
+library(palmerpenguins)
+library(quarto)
+library(tidyverse)
+```
+
+```{r}
+#| eval: false
+#| echo:  true
+#| 
+install.packages('tinytex')
+tinytex::install_tinytex()
+# to uninstall TinyTeX, run tinytex::uninstall_tinytex() 
+```
+
 # The Problem
 
 ## Word
@@ -143,6 +164,8 @@ format: html
     -   Originally: "Yet Another Markup Language"
 
     -   Later: "YAML Ain't Markup Language"
+
+-   Set global manuscript options with key-value pairs
 
 ## **Code**
 
