@@ -10,15 +10,18 @@ The materials should look like this:
 
 ```         
 my-reproducible-manuscript
+├── _freeze
+├── _manuscript
+├── _quarto.yml
 ├── data
 │   └── data.csv
-├── docs
+├── index.qmd
 ├── results
-└── scripts
+├── scripts
 │   ├── do_addition.py
 │   ├── do_addition.R
 │   ├── dummy.py
 │   └── dummy.R
-├── LICENSE.md
-└── README.md
+├── README.md
+├── references.bib
 ```

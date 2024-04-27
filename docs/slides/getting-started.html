@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
@@ -144,7 +144,6 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="getting-started" class="level1 unnumbered">
 <h1 class="unnumbered">Getting Started</h1>
-<p>Once you have followed all the steps for <a href="installation-and-setup.html">Installation and setup</a>, you can start to create the Quarto document that you will be working in during the workshop.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Rstudio</a></li></ul>
 <div class="tab-content">
@@ -157,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Click <em>Create Project</em>. This will create a <code>my-reproducible-manuscript.Rproj</code> file.</li>
 </ul>
 <p><strong>2. Document your project for reproducibility</strong></p>
-<p>Your project already contains pre-made folders, a README file and a License. Open the <code>README.md</code> file and fill it with a few relevant details, for example:</p>
+<p>Your project already contains pre-made folders and a README . Open the <code>README.md</code> file and fill it with a few relevant details, for example:</p>
 <ul>
 <li>Purpose and contents of the project</li>
 <li>Your name (Author)</li>
@@ -166,19 +165,21 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><strong>3. Create a Quarto document for your manuscript.</strong></p>
 <ul>
-<li>In RStudio, click <em>File</em> -&gt; <em>New File</em> -&gt; <em>Quarto Document</em></li>
-<li>Give your document a title, such as <code>My Reproducible Manuscript</code>.</li>
-<li>Add yourself as an author.</li>
-<li>For now, the default output format (HTML) and engine (knitr) are fine.</li>
-<li>Uncheck the <em>Use visual markdown editor</em> option.</li>
-<li>Click <em>Create</em>. A new Quarto document opens.</li>
+<li>In RStudio, open up the <code>index.qmd</code> file</li>
+<li>In the YAML
+<ul>
+<li>Change the title: <code>My Reproducible Manuscript</code>.</li>
+<li>Change the affiliation</li>
+</ul></li>
 </ul>
 <p><strong>4. Render the Quarto document to HTML</strong></p>
 <ul>
-<li>Save the Quarto document in the <code>docs</code> folder within the <code>my-reproducible-manuscript</code> folder.<br>
-Give the file a clear name, without using spaces. For example, <code>my-reproducible-manuscript.qmd</code>.</li>
+<li>Save the Quarto document as something different within the <code>my-reproducible-manuscript</code> folder.
+<ul>
+<li>Give the file a clear name, without using spaces. For example, <code>my-reproducible-manuscript.qmd</code>.</li>
+</ul></li>
 <li>Once everything has been saved correctly, click the <em>Render</em> button in the menu bar.</li>
-<li>The rendered HTML copy of your document will appear in your web browser or alongside the editor in RStudio. You will also see a <code>my-reproducible-manuscript.html</code> file appear in the <code>docs</code> folder.</li>
+<li>The rendered HTML copy of your document will appear in your web browser or alongside the editor in RStudio. You will also see a <code>my-reproducible-manuscript.html</code> file appear in the _manuscripts folder.</li>
 </ul>
 </div>
 </div>

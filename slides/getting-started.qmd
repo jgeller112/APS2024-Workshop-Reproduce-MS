@@ -1,7 +1,5 @@
 # Getting Started {.unnumbered}
 
-Once you have followed all the steps for [Installation and setup](installation-and-setup.html), you can start to create the Quarto document that you will be working in during the workshop.
-
 ::: panel-tabset
 ## Rstudio
 
@@ -14,7 +12,7 @@ Once you have followed all the steps for [Installation and setup](installation-a
 
 **2. Document your project for reproducibility**
 
-Your project already contains pre-made folders, a README file and a License. Open the `README.md` file and fill it with a few relevant details, for example:
+Your project already contains pre-made folders and a README . Open the `README.md` file and fill it with a few relevant details, for example:
 
 -   Purpose and contents of the project
 -   Your name (Author)
@@ -23,17 +21,15 @@ Your project already contains pre-made folders, a README file and a License. Ope
 
 **3. Create a Quarto document for your manuscript.**
 
--   In RStudio, click *File* -\> *New File* -\> *Quarto Document*
--   Give your document a title, such as `My Reproducible Manuscript`.
--   Add yourself as an author.
--   For now, the default output format (HTML) and engine (knitr) are fine.
--   Uncheck the *Use visual markdown editor* option.
--   Click *Create*. A new Quarto document opens.
+-   In RStudio, open up the `index.qmd` file
+-   In the YAML
+    -   Change the title: `My Reproducible Manuscript`.
+    -   Change the affiliation
 
 **4. Render the Quarto document to HTML**
 
--   Save the Quarto document in the `docs` folder within the `my-reproducible-manuscript` folder.\
-    Give the file a clear name, without using spaces. For example, `my-reproducible-manuscript.qmd`.
+-   Save the Quarto document as something different within the `my-reproducible-manuscript` folder.
+    -   Give the file a clear name, without using spaces. For example, `my-reproducible-manuscript.qmd`.
 -   Once everything has been saved correctly, click the *Render* button in the menu bar.
--   The rendered HTML copy of your document will appear in your web browser or alongside the editor in RStudio. You will also see a `my-reproducible-manuscript.html` file appear in the `docs` folder.
+-   The rendered HTML copy of your document will appear in your web browser or alongside the editor in RStudio. You will also see a `my-reproducible-manuscript.html` file appear in the \_manuscripts folder.
 :::

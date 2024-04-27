@@ -1,12 +1,12 @@
 ---
-title: APS_demo
+title: My Reproducible Manuscript
 authors:
   - name: Norah Jones
     affiliation: The University
     roles: writing
     corresponding: true
 bibliography: references.bib
-format: pdf
+format: html
 ---
 
 ## Section
