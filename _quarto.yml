@@ -5,7 +5,7 @@ project:
 website:
   title: "APS 2024 Workshop: Reproducible Manuscripts in R"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
       - href: slides/workshop-materials.qmd
@@ -23,9 +23,10 @@ website:
 
 format:
   html:
-    theme: darkly
+    theme: superhero
     css: styles.css
     toc: true
+    fontsize: "18pt"
 
 editor: visual
 

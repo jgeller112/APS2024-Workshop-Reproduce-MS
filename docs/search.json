@@ -179,7 +179,7 @@
     "href": "slides/introduction_slides.html#word-issues",
     "title": "Reproducible Manuscripts in R",
     "section": "Word issues",
-    "text": "Word issues\n\nA .docx file is a compressed folder with lots of files\n\nYour text is buried in with a lot of formatting information\n\n\n\n\nNot reproducible\n\nCode is divorced from writing\n\nDifficult to maintain\n\nErrors!\n\nWhat do I share?\n\nLack of transparency"
+    "text": "Word issues\n\n\n\n\nA .docx file is a compressed folder with lots of files\n\nYour text is buried in with a lot of formatting information\n\n\n\n\nNot reproducible\n\nCode is divorced from writing\n\n\n\n\nDifficult to maintain\n\nErrors!\n\nWhat do I share?\n\nLack of transparency"
   },
   {
     "objectID": "slides/introduction_slides.html#what-do-we-want",
@@ -235,7 +235,7 @@
     "href": "slides/introduction_slides.html#getting-started-1",
     "title": "Reproducible Manuscripts in R",
     "section": "Getting started",
-    "text": "Getting started\n\nLet’s go to RStudio!"
+    "text": "Getting started\n\nGo to the Getting Started section of website and complete each part\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/introduction_slides.html#quarto-document",

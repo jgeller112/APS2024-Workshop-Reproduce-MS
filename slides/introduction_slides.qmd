@@ -55,19 +55,30 @@ tinytex::install_tinytex()
 
 ![](img/word_document_inside.png){fig-align="center"}
 
-## Word issues
+## Word issues 
 
+::: {.incremental}
+
+::: columns
+::: {.column width="50%"}
 -   A .docx file is a compressed folder with lots of files
     -   Your text is buried in with a lot of formatting information
 
-. . .
-
+```{=html}
+<!-- -->
+```
 -   Not reproducible
     -   Code is divorced from writing
+:::
+
+::: {.column width="50%"}
 -   Difficult to maintain
     -   Errors!
 -   What do I share?
     -   Lack of transparency
+:::
+:::
+:::
 
 ## What do we want?
 
@@ -135,13 +146,19 @@ tinytex::install_tinytex()
 
 ## Getting started
 
--   Let's go to RStudio!
+-   Go to the `Getting Started` section of website and complete each part
 
-## Quarto Document
+```{r}
+#| echo: false
+#| 
+library(countdown)
+countdown(minutes=5)
 
-![](img/qmd_exp.png){fig-align="center"}
+```
 
 ## Anatomy of a Quarto Document {.scrollable}
+
+![](img/qmd_exp.png){fig-align="center"}
 
 ## **Metadata & Header (YAML)**
 
