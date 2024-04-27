@@ -8,8 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: slides/workshop-materials.qmd
+        text: Workshop Materials
       - href: slides/introduction.qmd
         text: Introduction
+      - href: slides/getting-started.qmd
+        text: Getting Started
       - href: slides/markdown-syntax.qmd
         text: Writing/References
       - href: slides/code-chunks.qmd

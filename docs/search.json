@@ -88,7 +88,7 @@
     "href": "slides/markdown-syntax.html",
     "title": "Markdown Syntax",
     "section": "",
-    "text": "View slides in full screen\n \n\n\n\n\n\n\nRecreate the following paragraph in your Quarto document using Markdown:\nMeet Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. \nTo learn more about Quarto see https://quarto.org.\n\nMeet the penguins\n\nThe penguins data from the palmerpenguins package contains size measurements for \n344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica. \n\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\n\n\n\n\n\n\nYou can find the illustration of the three species of Palmer Archipelago penguins (Chinstrap, Gentoo, and Adelie) here: https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png.\nThe link to the Palmer Penguins package is here: https://allisonhorst.github.io/palmerpenguins/."
+    "text": "View slides in full screen\n \n\n\n\n\n\n\nRecreate the following paragraph in your Quarto document using Markdown:\nMeet Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. \nTo learn more about Quarto see https://quarto.org.\n\nMeet the penguins\n\nThe penguins data from the palmerpenguins package contains size measurements for \n344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica. \n\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\n\n\n\n\n\n\nYou can find the illustration of the three species of Palmer Archipelago penguins (Chinstrap, Gentoo, and Adelie) here: https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png.\nThe link to the Palmer Penguins package is here: https://allisonhorst.github.io/palmerpenguins/.\n\n\n\n\n\nWe’re assuming installation of Zotero Desktop, Zotero Connector, and Better BibTex for Zotero were completed successfully.\n\nOpen Zotero Desktop\n\n\nlog into your account\ncreate a new collection for your project, for example: my-reproducible-manuscript\n\n\nOpen your Web Browser\n\n\ndouble-check that you can find the Zotero Connector in your browser\nrun a web / Google Scholar search for “Allison Horst PalmerPenguins Package”\nuse the Zotero Connector to save the reference to your collection\n\n\nIn Zotero Desktop,\n\n\nright-click your collection and select Export Collection\nfor the Format, select Better BibTex\nclick the option to Keep updated\nprovide the file name as references and save it in the same folder as your Quarto document\n\n\nIn RStudio or VS Code,\n\n\nupdate the YAML to include the bibliography:\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: html\nbibliography: references.bib\n---\n\nInsert a Citation\n\n\nIn the text of your Quarto document, insert the PalmerPenguins citation (hint: refer to the slides and your .bib file to figure how to format the citation)\nAlternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.\nRender the document\n\n\nRepetition\n\n\nrepeat Step 2 with another reference\nrepeat Step 5 to insert the new reference\nif you did a bracketed citation before, do an in-text citation this time (or vice versa)\n\nNote: Steps 1, 3, 4 can be skipped. These were a one-time thing."
   },
   {
     "objectID": "slides/markdown-syntax.html#slides",
@@ -256,7 +256,7 @@
     "href": "slides/introduction_slides.html#word-issues",
     "title": "Reproducible Manuscripts in R",
     "section": "Word issues",
-    "text": "Word issues\n\nA .docx file is a compressed folder with lots of files\n\nYour text is buried in with a lot of formatting information\n\n\n\n\nNot reproducible\n\nCode is divorced from writing\n\nDifficult to maintain\n\nErrors!\n\nWhat do I share?\n\nLack of transparency"
+    "text": "Word issues\n\nA .docx file is a compressed folder with lots of files\n\nYour text is buried in with a lot of formatting information\n\n\n. . .\n\nNot reproducible\n\nCode is divorced from writing\n\nDifficult to maintain\n\nErrors!\n\nWhat do I share?\n\nLack of transparency"
   },
   {
     "objectID": "slides/introduction_slides.html#what-do-we-want",
@@ -305,7 +305,7 @@
     "href": "slides/introduction_slides.html#getting-started",
     "title": "Reproducible Manuscripts in R",
     "section": "Getting started",
-    "text": "Getting started\n\nApproach 1: Start from scratch (now)\n\nCreating a Quarto manuscript\n\nRStudio: New Project &gt; New Directory &gt; Quarto Manuscript\n\n\n\n\n\n\n\n\nNote\n\n\nAlways start a new project folder!\n\n\n\nApproach 2: Start with a sample template (later)"
+    "text": "Getting started\n\nApproach 1: Start from scratch (now)\n\nCreating a Quarto manuscript\n\nRStudio: New Project &gt; New Directory &gt; Quarto Manuscript\n\n\n\n\n\n\n\n\nNote\n\n\n\nAlways start a new project folder!\n\n\nApproach 2: Start with a sample template (later)"
   },
   {
     "objectID": "slides/introduction_slides.html#getting-started-1",
@@ -347,14 +347,14 @@
     "href": "slides/introduction_slides.html#text",
     "title": "Reproducible Manuscripts in R",
     "section": "Text",
-    "text": "Text\n# Heading 1\nThis is a sentence with some **bold text**, \nsome *italic text* and \nan [image](image.png).\n\n\n\nAPS 2024"
+    "text": "Text\n# Heading 1\nThis is a sentence with some **bold text**, \nsome *italic text* and \nan [image](image.png)."
   },
   {
     "objectID": "slides/writing_slides.html#markdown-syntax",
     "href": "slides/writing_slides.html#markdown-syntax",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
     "section": "Markdown Syntax",
-    "text": "Markdown Syntax\nWhen writing the body of your document, you will use the Markdown format.\n\n\nMarkdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. - Markdown Guide\n\n\n\nWhen you render your Quarto document, Quarto converts the Markdown-formatted text into HTML, LaTeX, etc., depending on the output format you chose."
+    "text": "Markdown Syntax\nWhen writing the body of your document, you will use the Markdown format.\n\n\nMarkdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. - Markdown Guide"
   },
   {
     "objectID": "slides/writing_slides.html#learning-markdown",
@@ -479,7 +479,49 @@
     "objectID": "slides/introduction_slides.html#packages",
     "href": "slides/introduction_slides.html#packages",
     "title": "Reproducible Manuscripts in R",
-    "section": "Packages",
-    "text": "Packages\n\nIf you want to render to pdf make sure to ihave tinytex installed\n\n\nlibrary(palmerpenguins)\nlibrary(quarto)\nlibrary(tidyverse)\n\n\ninstall.packages('tinytex')\ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex()"
+    "section": "",
+    "text": "Important\n\n\n\n\nYou should also have Zotero installed (or some reference manager)\nAlong with the packages below\n\n\n\n\nlibrary(palmerpenguins)\nlibrary(quarto)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\ninstall.packages('tinytex')\ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex()"
+  },
+  {
+    "objectID": "slides/markdown-syntax.html#exercise-markdown",
+    "href": "slides/markdown-syntax.html#exercise-markdown",
+    "title": "Markdown Syntax",
+    "section": "",
+    "text": "Recreate the following paragraph in your Quarto document using Markdown:\nMeet Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. \nTo learn more about Quarto see https://quarto.org.\n\nMeet the penguins\n\nThe penguins data from the palmerpenguins package contains size measurements for \n344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica. \n\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\n\n\n\n\n\n\nYou can find the illustration of the three species of Palmer Archipelago penguins (Chinstrap, Gentoo, and Adelie) here: https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png.\nThe link to the Palmer Penguins package is here: https://allisonhorst.github.io/palmerpenguins/."
+  },
+  {
+    "objectID": "slides/markdown-syntax.html#exercise-referencing",
+    "href": "slides/markdown-syntax.html#exercise-referencing",
+    "title": "Markdown Syntax",
+    "section": "",
+    "text": "We’re assuming installation of Zotero Desktop, Zotero Connector, and Better BibTex for Zotero were completed successfully.\n\nOpen Zotero Desktop\n\n\nlog into your account\ncreate a new collection for your project, for example: my-reproducible-manuscript\n\n\nOpen your Web Browser\n\n\ndouble-check that you can find the Zotero Connector in your browser\nrun a web / Google Scholar search for “Allison Horst PalmerPenguins Package”\nuse the Zotero Connector to save the reference to your collection\n\n\nIn Zotero Desktop,\n\n\nright-click your collection and select Export Collection\nfor the Format, select Better BibTex\nclick the option to Keep updated\nprovide the file name as references and save it in the same folder as your Quarto document\n\n\nIn RStudio or VS Code,\n\n\nupdate the YAML to include the bibliography:\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: html\nbibliography: references.bib\n---\n\nInsert a Citation\n\n\nIn the text of your Quarto document, insert the PalmerPenguins citation (hint: refer to the slides and your .bib file to figure how to format the citation)\nAlternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.\nRender the document\n\n\nRepetition\n\n\nrepeat Step 2 with another reference\nrepeat Step 5 to insert the new reference\nif you did a bracketed citation before, do an in-text citation this time (or vice versa)\n\nNote: Steps 1, 3, 4 can be skipped. These were a one-time thing."
+  },
+  {
+    "objectID": "slides/introduction_slides.html",
+    "href": "slides/introduction_slides.html",
+    "title": "Reproducible Manuscripts in R",
+    "section": "",
+    "text": "Click on the link or scan the barcode to access slides and exercises\n\n\n\n\n    \n\nhttps://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/\n\n\n\n\n\n\n\n\nImportant\n\n\n\n\nYou should also have Zotero installed (or some reference manager)\nAlong with the packages below\n\n\n\n\nlibrary(palmerpenguins)\nlibrary(quarto)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\ninstall.packages('tinytex')\ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex()"
+  },
+  {
+    "objectID": "slides/writing_slides.html#markdown",
+    "href": "slides/writing_slides.html#markdown",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Markdown",
+    "text": "Markdown"
+  },
+  {
+    "objectID": "slides/writing_slides.html#introduction",
+    "href": "slides/writing_slides.html#introduction",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Introduction",
+    "text": "Introduction\nWelcome to my awesome class. You will learn all kinds of useful things about R markdown."
+  },
+  {
+    "objectID": "slides/getting-started.html",
+    "href": "slides/getting-started.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "Getting Started\nOnce you have followed all the steps for Installation and setup, you can start to create the Quarto document that you will be working in during the workshop.\n\nRstudio\n\n\n1. Create an RStudio Project\n\nIn RStudio, click File &gt; New Project &gt; Existing Directory.\nBrowse to your folder my-reproducible-manuscript in which you have saved the workshop materials.\nCheck the Open in new session option.\nClick Create Project. This will create a my-reproducible-manuscript.Rproj file.\n\n2. Document your project for reproducibility\nYour project already contains pre-made folders, a README file and a License. Open the README.md file and fill it with a few relevant details, for example:\n\nPurpose and contents of the project\nYour name (Author)\nThe date of creation\nEtc.\n\n3. Create a Quarto document for your manuscript.\n\nIn RStudio, click File -&gt; New File -&gt; Quarto Document\nGive your document a title, such as My Reproducible Manuscript.\nAdd yourself as an author.\nFor now, the default output format (HTML) and engine (knitr) are fine.\nUncheck the Use visual markdown editor option.\nClick Create. A new Quarto document opens.\n\n4. Render the Quarto document to HTML\n\nSave the Quarto document in the docs folder within the my-reproducible-manuscript folder.\nGive the file a clear name, without using spaces. For example, my-reproducible-manuscript.qmd.\nOnce everything has been saved correctly, click the Render button in the menu bar.\nThe rendered HTML copy of your document will appear in your web browser or alongside the editor in RStudio. You will also see a my-reproducible-manuscript.html file appear in the docs folder."
   }
 ]
