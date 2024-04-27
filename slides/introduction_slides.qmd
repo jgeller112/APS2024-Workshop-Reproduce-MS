@@ -18,7 +18,11 @@ format:
 
 # Introduction
 
-{{< qrcode https://jmbuhr.de >}}
+<center>
+
+{{< qrcode https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/ >}}
+
+</center>
 
 # The Problem
 
