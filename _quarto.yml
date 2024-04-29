@@ -4,23 +4,29 @@ project:
 
 website:
   title: "APS 2024 Workshop: Reproducible Manuscripts in R"
-  navbar:
-    right:
-      - href: index.qmd
-        text: Home
-      - href: slides/workshop-materials.qmd
-        text: Workshop Materials
-      - href: slides/introduction.qmd
-        text: Introduction
-      - href: slides/getting-started.qmd
-        text: Getting Started
-      - href: slides/markdown-syntax.qmd
-        text: Writing/References
-      - href: slides/code-chunks.qmd
-        text: Analysis
-      - href: slides/rendering.qmd
-        text: Rendering
-
+  sidebar:
+    background: "purple"
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Workshop"
+        contents:
+          - href: index.qmd
+            text: Home
+          - href: slides/workshop-materials.qmd
+            text: Materials
+          - href: slides/workshop-materials.qmd
+            text: Introduction
+          - href: slides/getting-started.qmd
+            text: Getting Started
+          - href: slides/markdown-syntax.qmd
+            text: Markdown
+          - href: slides/code-chunks.qmd
+            text: Analysis
+          - href: slides/rendering.qmd
+            text: Rendering
+      
 format:
   html:
     theme: superhero
