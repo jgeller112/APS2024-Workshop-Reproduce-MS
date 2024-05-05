@@ -13,6 +13,7 @@ my-reproducible-manuscript
 ├── _freeze
 ├── _manuscript
 ├── _quarto.yml
+├── apa7.csl
 ├── data
 │   └── data.csv
 ├── index.qmd

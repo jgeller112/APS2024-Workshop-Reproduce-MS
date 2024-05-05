@@ -6,7 +6,9 @@ format:
     slide-number: true
     navigation-mode: linear
     controls: true
-    fontsize: "32pt"
+    fontsize: "30pt"
+    width: 1920
+    height: 1080
 ---
 
 # Rendering {background-color="#FFCD00"}
@@ -82,9 +84,9 @@ OR
 quarto render my-reproducible-manuscript.qmd
 ```
 
-You don't have to run separate commands with the `--to` flag.
-
-**Note:** the *Render* button will not work for multiple formats.
+::: callout-note
+the *Render* button will not work for multiple formats.
+:::
 
 ## Journal Formats
 
@@ -138,13 +140,49 @@ quarto use template wjschne/apaquarto
 
 ## Exercise
 
-Go to the *Rendering* chapter in the workshop book and refer to the instructions in the *Exercise* section.
+-   Go to the *Rendering* chapter in the workshop book and refer to the instructions in the *Exercise* section.
 
-You will render your document into html and docx formats.
+-   You will render your document into html and docx formats.
 
 ```{r}
 library(countdown)
 
 countdown(minutes = 10,
           color_background = "#FFCD00")
+```
+
+# What's Next?
+
+## Sharing
+
+-   Share your manuscript
+
+    -   Open science framework (OSF)
+
+    -   Github
+
+    -   Website/book
+
+## Publish 
+
+-   Publish to a quarto webpage ([https://quartopub.com](https://quartopub.com/))
+
+    -   You can find the blue **Publishing** icon in the following locations:
+
+        -   The upper right of the file editor
+
+        -   The document viewer when viewing a document
+
+        -   The embedded viewer when running a Shiny application
+
+        -   The Plots pane
+
+    -   Click on icon
+
+-   Also in terminal:
+
+```{bash}
+#| eval: false
+#| echo: true
+quarto publish quarto-pub
 ```

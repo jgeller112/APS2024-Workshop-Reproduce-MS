@@ -154,11 +154,32 @@
     "text": "Exercise\nGo to the Referencing section on the website and refer to the instructions in the Exercise section.\nYou will go through the workflow of creating a .bib file that will be automatically updated by Zotero and integrating it with your Quarto document.\n\n\n\n−+\n10:00"
   },
   {
+    "objectID": "slides/writing_slides.html#references-on-the-fly",
+    "href": "slides/writing_slides.html#references-on-the-fly",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "References on the fly",
+    "text": "References on the fly\n\nAlternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.\nLet’s go to RStudio!"
+  },
+  {
+    "objectID": "slides/writing_slides.html#apa-style",
+    "href": "slides/writing_slides.html#apa-style",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "APA Style",
+    "text": "APA Style\n\nYou need to use a csl (citation style guide) file to make sure references are properly formatted\nI have included the apa7.csl file in the project folder\n\nThis will format references/citations in accordance with APA 7th edition"
+  },
+  {
+    "objectID": "slides/writing_slides.html#exercise-2",
+    "href": "slides/writing_slides.html#exercise-2",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Exercise",
+    "text": "Exercise\n\nAdd the csl to your YAML and include the apa7.csl file"
+  },
+  {
     "objectID": "slides/introduction_slides.html#packages",
     "href": "slides/introduction_slides.html#packages",
     "title": "Reproducible Manuscripts in R",
     "section": "Packages",
-    "text": "Packages\n\nlibrary(palmerpenguins) # penguins\nlibrary(quarto) # qmd \nlibrary(rmarkdown) # markdown\nlibrary(tidyverse) # data wrangling\n\n\ninstall.packages('tinytex') # for use with pdf \ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex()"
+    "text": "Packages\n\nlibrary(palmerpenguins) # penguins\nlibrary(quarto) # qmd \nlibrary(rmarkdown) # markdown\nlibrary(tidyverse) # data wrangling\nlibrary(papaja) # apa writing template\n\n\ninstall.packages('tinytex') # for use with pdf \ntinytex::install_tinytex()\n# to uninstall TinyTeX, run tinytex::uninstall_tinytex() \n\n\nYou should also have Zotero installed along with Better BibTeX (nice, but not necessary)"
   },
   {
     "objectID": "slides/introduction_slides.html#word",
@@ -270,14 +291,22 @@
     "href": "slides/introduction.html",
     "title": "Introduction",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Introduction"
+    ]
   },
   {
     "objectID": "slides/introduction.html#slides",
     "href": "slides/introduction.html#slides",
     "title": "Introduction",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Introduction"
+    ]
   },
   {
     "objectID": "slides/rendering_slides.html#how-to-render",
@@ -291,7 +320,7 @@
     "href": "slides/rendering_slides.html#rendering-to-multiple-formats",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
     "section": "Rendering to Multiple Formats",
-    "text": "Rendering to Multiple Formats\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: \n  html: default\n  docx: default\n  pdf: default\n---\n\nThen:\n\nlibrary(quarto)\nquarto_render(\"my-reproducible-manuscript.qmd\")\n\nOR\n\nquarto render my-reproducible-manuscript.qmd\n\nYou don’t have to run separate commands with the --to flag.\nNote: the Render button will not work for multiple formats."
+    "text": "Rendering to Multiple Formats\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: \n  html: default\n  docx: default\n  pdf: default\n---\n\nThen:\n\nlibrary(quarto)\nquarto_render(\"my-reproducible-manuscript.qmd\")\n\nOR\n\nquarto render my-reproducible-manuscript.qmd\n\n\n\n\n\n\n\nNote\n\n\nthe Render button will not work for multiple formats."
   },
   {
     "objectID": "slides/rendering_slides.html#journal-formats",
@@ -326,14 +355,28 @@
     "href": "slides/rendering_slides.html#exercise",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
     "section": "Exercise",
-    "text": "Exercise\nGo to the Rendering chapter in the workshop book and refer to the instructions in the Exercise section.\nYou will render your document into html and docx formats.\n\n\n\n−+\n10:00"
+    "text": "Exercise\n\nGo to the Rendering chapter in the workshop book and refer to the instructions in the Exercise section.\nYou will render your document into html and docx formats.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "slides/rendering_slides.html#sharing",
+    "href": "slides/rendering_slides.html#sharing",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Sharing",
+    "text": "Sharing\n\nShare your manuscript\n\nOpen science framework (OSF)\nGithub\nWebsite/book"
+  },
+  {
+    "objectID": "slides/rendering_slides.html#publish",
+    "href": "slides/rendering_slides.html#publish",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Publish",
+    "text": "Publish\n\nPublish to a quarto webpage (https://quartopub.com)\n\nYou can find the blue Publishing icon in the following locations:\n\nThe upper right of the file editor\nThe document viewer when viewing a document\nThe embedded viewer when running a Shiny application\nThe Plots pane\n\nClick on icon\n\nAlso in terminal:\n\n\nquarto publish quarto-pub"
   },
   {
     "objectID": "slides/rendering.html",
     "href": "slides/rendering.html",
     "title": "Rendering",
     "section": "",
-    "text": "View slides in full screen\n \n\n\n\n\n\n\nRender your Quarto document to docx using both:\n\n\nthe quarto R package\nthe Terminal\n\n\nAdjust the YAML to include both html & docx and re-render the document.\n\nOPTIONAL:\n\nRender your Quarto document to pdf.\nTry out the APA Template.\n\n\nSimply obtain the template and render it, no need to make changes to the content",
+    "text": "View slides in full screen\n \n\n\n\n\n\n\nRender your Quarto document to docx using both:\n\n\nthe quarto R package\nthe Terminal\n\n\nAdjust the YAML to include both html & docx and re-render the document.\nRender your Quarto document to pdf.\nTry out the APA Template\n\n\nSimply obtain the template and render it, no need to make changes to the content",
     "crumbs": [
       "Workshop",
       "Rendering"
@@ -344,7 +387,7 @@
     "href": "slides/rendering.html#exercise",
     "title": "Rendering",
     "section": "",
-    "text": "Render your Quarto document to docx using both:\n\n\nthe quarto R package\nthe Terminal\n\n\nAdjust the YAML to include both html & docx and re-render the document.\n\nOPTIONAL:\n\nRender your Quarto document to pdf.\nTry out the APA Template.\n\n\nSimply obtain the template and render it, no need to make changes to the content",
+    "text": "Render your Quarto document to docx using both:\n\n\nthe quarto R package\nthe Terminal\n\n\nAdjust the YAML to include both html & docx and re-render the document.\nRender your Quarto document to pdf.\nTry out the APA Template\n\n\nSimply obtain the template and render it, no need to make changes to the content",
     "crumbs": [
       "Workshop",
       "Rendering"
@@ -355,7 +398,7 @@
     "href": "slides/workshop-materials.html",
     "title": "Workshop Materials",
     "section": "",
-    "text": "Workshop Materials\nThe workshop materials consist of a project structure and dummy scripts that will be used during the session.\n\nRight-click on the following link and select Save Link As…: my-reproducible-manuscript.zip\nSave the zip file in a location that you can easily access. We recommend to not use the default download location of your browser.\nExtract the contents of the zipped file.\n\nThe materials should look like this:\nmy-reproducible-manuscript\n├── _freeze\n├── _manuscript\n├── _quarto.yml\n├── data\n│   └── data.csv\n├── index.qmd\n├── results\n├── scripts\n│   ├── do_addition.py\n│   ├── do_addition.R\n│   ├── dummy.py\n│   └── dummy.R\n├── README.md\n├── references.bib",
+    "text": "Workshop Materials\nThe workshop materials consist of a project structure and dummy scripts that will be used during the session.\n\nRight-click on the following link and select Save Link As…: my-reproducible-manuscript.zip\nSave the zip file in a location that you can easily access. We recommend to not use the default download location of your browser.\nExtract the contents of the zipped file.\n\nThe materials should look like this:\nmy-reproducible-manuscript\n├── _freeze\n├── _manuscript\n├── _quarto.yml\n├── apa7.csl\n├── data\n│   └── data.csv\n├── index.qmd\n├── results\n├── scripts\n│   ├── do_addition.py\n│   ├── do_addition.R\n│   ├── dummy.py\n│   └── dummy.R\n├── README.md\n├── references.bib",
     "crumbs": [
       "Workshop",
       "Materials"
@@ -377,7 +420,7 @@
     "href": "slides/markdown-syntax.html",
     "title": "Markdown Syntax",
     "section": "",
-    "text": "View slides in full screen\n \n\n\n\n\n\n\nRecreate the following paragraph in your Quarto document using Markdown:\nMeet Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. \nTo learn more about Quarto see https://quarto.org.\n\nMeet the penguins\n\nThe penguins data from the palmerpenguins package contains size measurements for \n344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica. \n\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\n\n\n\n\n\n\nYou can find the illustration of the three species of Palmer Archipelago penguins (Chinstrap, Gentoo, and Adelie) here: https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png.\nThe link to the Palmer Penguins package is here: https://allisonhorst.github.io/palmerpenguins/.\n\n\n\n\n\nWe’re assuming installation of Zotero Desktop, Zotero Connector, and Better BibTex for Zotero were completed successfully.\n\nOpen Zotero Desktop\n\n\nlog into your account\ncreate a new collection for your project, for example: my-reproducible-manuscript\n\n\nOpen your Web Browser\n\n\ndouble-check that you can find the Zotero Connector in your browser\nrun a web / Google Scholar search for “Allison Horst PalmerPenguins Package”\nuse the Zotero Connector to save the reference to your collection\n\n\nIn Zotero Desktop,\n\n\nright-click your collection and select Export Collection\nfor the Format, select Better BibTex\nclick the option to Keep updated\nprovide the file name as references and save it in the same folder as your Quarto document\n\n\nIn RStudio or VS Code,\n\n\nupdate the YAML to include the bibliography:\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: html\nbibliography: references.bib\n---\n\nInsert a Citation\n\n\nIn the text of your Quarto document, insert the PalmerPenguins citation (hint: refer to the slides and your .bib file to figure how to format the citation)\nAlternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.\nRender the document\n\n\nRepetition\n\n\nrepeat Step 2 with another reference\nrepeat Step 5 to insert the new reference\nif you did a bracketed citation before, do an in-text citation this time (or vice versa)\n\nNote: Steps 1, 3, 4 can be skipped. These were a one-time thing.",
+    "text": "View slides in full screen\n \n\n\n\n\n\n\nRecreate the following paragraph in your Quarto document using Markdown:\nMeet Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. \nTo learn more about Quarto see https://quarto.org.\n\nMeet the penguins\n\nThe `penguins` data from the palmerpenguins package contains size measurements for344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica. \n\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\n\n\n\n\n\n\nYou can find the illustration of the three species of Palmer Archipelago penguins (Chinstrap, Gentoo, and Adelie) here: https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png.\nThe link to the Palmer Penguins package is here: https://allisonhorst.github.io/palmerpenguins/.\n\n\n\n\n\nWe’re assuming installation of Zotero Desktop, Zotero Connector, and Better BibTex for Zotero were completed successfully.\n\nOpen Zotero Desktop\n\n\nlog into your account\ncreate a new collection for your project, for example: my-reproducible-manuscript\n\n\nOpen your Web Browser\n\n\ndouble-check that you can find the Zotero Connector in your browser\nrun a web / Google Scholar search for “Allison Horst PalmerPenguins Package”\nuse the Zotero Connector to save the reference to your collection\n\n\nIn Zotero Desktop,\n\n\nRight-click your collection and select Export Collection\nFor the Format, select Better BibTex\nClick the option to Keep updated\nProvide the file name as references and save it in the same folder as your Quarto document\n\n\nIn RStudio or VS Code,\n\n\nupdate the YAML to include the bibliography:\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: html\nbibliography: references.bib\n---\n\nInsert a Citation\n\n\nIn the text of your Quarto document, insert the PalmerPenguins citation (hint: refer to the slides and your .bib file to figure how to format the citation)\nAlternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.\nRender the document\n\n\nRepetition\n\n\nRepeat Step 2 with another reference\nRepeat Step 5 to insert the new reference\nif you did a bracketed citation before, do an in-text citation this time (or vice versa)\n\nNote: Steps 1, 3, 4 can be skipped. These were a one-time thing.",
     "crumbs": [
       "Workshop",
       "Markdown"
@@ -399,7 +442,7 @@
     "href": "slides/markdown-syntax.html#exercise-markdown",
     "title": "Markdown Syntax",
     "section": "",
-    "text": "Recreate the following paragraph in your Quarto document using Markdown:\nMeet Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. \nTo learn more about Quarto see https://quarto.org.\n\nMeet the penguins\n\nThe penguins data from the palmerpenguins package contains size measurements for \n344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica. \n\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\n\n\n\n\n\n\nYou can find the illustration of the three species of Palmer Archipelago penguins (Chinstrap, Gentoo, and Adelie) here: https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png.\nThe link to the Palmer Penguins package is here: https://allisonhorst.github.io/palmerpenguins/.",
+    "text": "Recreate the following paragraph in your Quarto document using Markdown:\nMeet Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. \nTo learn more about Quarto see https://quarto.org.\n\nMeet the penguins\n\nThe `penguins` data from the palmerpenguins package contains size measurements for344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica. \n\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\n\n\n\n\n\n\nYou can find the illustration of the three species of Palmer Archipelago penguins (Chinstrap, Gentoo, and Adelie) here: https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png.\nThe link to the Palmer Penguins package is here: https://allisonhorst.github.io/palmerpenguins/.",
     "crumbs": [
       "Workshop",
       "Markdown"
@@ -410,7 +453,7 @@
     "href": "slides/markdown-syntax.html#exercise-referencing",
     "title": "Markdown Syntax",
     "section": "",
-    "text": "We’re assuming installation of Zotero Desktop, Zotero Connector, and Better BibTex for Zotero were completed successfully.\n\nOpen Zotero Desktop\n\n\nlog into your account\ncreate a new collection for your project, for example: my-reproducible-manuscript\n\n\nOpen your Web Browser\n\n\ndouble-check that you can find the Zotero Connector in your browser\nrun a web / Google Scholar search for “Allison Horst PalmerPenguins Package”\nuse the Zotero Connector to save the reference to your collection\n\n\nIn Zotero Desktop,\n\n\nright-click your collection and select Export Collection\nfor the Format, select Better BibTex\nclick the option to Keep updated\nprovide the file name as references and save it in the same folder as your Quarto document\n\n\nIn RStudio or VS Code,\n\n\nupdate the YAML to include the bibliography:\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: html\nbibliography: references.bib\n---\n\nInsert a Citation\n\n\nIn the text of your Quarto document, insert the PalmerPenguins citation (hint: refer to the slides and your .bib file to figure how to format the citation)\nAlternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.\nRender the document\n\n\nRepetition\n\n\nrepeat Step 2 with another reference\nrepeat Step 5 to insert the new reference\nif you did a bracketed citation before, do an in-text citation this time (or vice versa)\n\nNote: Steps 1, 3, 4 can be skipped. These were a one-time thing.",
+    "text": "We’re assuming installation of Zotero Desktop, Zotero Connector, and Better BibTex for Zotero were completed successfully.\n\nOpen Zotero Desktop\n\n\nlog into your account\ncreate a new collection for your project, for example: my-reproducible-manuscript\n\n\nOpen your Web Browser\n\n\ndouble-check that you can find the Zotero Connector in your browser\nrun a web / Google Scholar search for “Allison Horst PalmerPenguins Package”\nuse the Zotero Connector to save the reference to your collection\n\n\nIn Zotero Desktop,\n\n\nRight-click your collection and select Export Collection\nFor the Format, select Better BibTex\nClick the option to Keep updated\nProvide the file name as references and save it in the same folder as your Quarto document\n\n\nIn RStudio or VS Code,\n\n\nupdate the YAML to include the bibliography:\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: html\nbibliography: references.bib\n---\n\nInsert a Citation\n\n\nIn the text of your Quarto document, insert the PalmerPenguins citation (hint: refer to the slides and your .bib file to figure how to format the citation)\nAlternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.\nRender the document\n\n\nRepetition\n\n\nRepeat Step 2 with another reference\nRepeat Step 5 to insert the new reference\nif you did a bracketed citation before, do an in-text citation this time (or vice versa)\n\nNote: Steps 1, 3, 4 can be skipped. These were a one-time thing.",
     "crumbs": [
       "Workshop",
       "Markdown"

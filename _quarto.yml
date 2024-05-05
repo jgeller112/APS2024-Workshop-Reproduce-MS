@@ -16,7 +16,7 @@ website:
             text: Home
           - href: slides/workshop-materials.qmd
             text: Materials
-          - href: slides/workshop-materials.qmd
+          - href: slides/introduction.qmd
             text: Introduction
           - href: slides/getting-started.qmd
             text: Getting Started

@@ -8,7 +8,7 @@ format:
     controls: true
     code-overflow: wrap
     incremental: true
-    fontsize: "32pt"
+    fontsize: "30pt"
 ---
 
 # Analysis {background-color="#FFCD00"}

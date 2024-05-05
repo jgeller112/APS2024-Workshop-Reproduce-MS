@@ -6,11 +6,7 @@ title: "APS 2024 Workshop - Reproducible Manuscripts in R"
 
 ![](images/clipboard-255692279.png)
 
-<center>
-
-{{< qrcode https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/ >}}
-
-</center>
+<center> {{< qrcode https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/ >}} <center>
 
 # Welcome! {.unnumbered}
 

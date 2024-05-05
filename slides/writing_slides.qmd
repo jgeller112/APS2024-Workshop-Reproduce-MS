@@ -8,7 +8,7 @@ format:
     controls: true
     code-overflow: wrap
     code-line-numbers: false
-    fontsize: "32pt"
+    fontsize: "30pt"
 ---
 
 # Writing {background-color="#FFCD00"}
@@ -389,5 +389,37 @@ You will go through the workflow of creating a `.bib` file that will be automati
 library(countdown)
 
 countdown(minutes = 10,
+          color_background = "#FFCD00")
+```
+
+## References on the fly
+
+-   Alternatively, when using the Visual Editor option - you can use the citation dialog/option to insert citations directly.
+
+-   Let's go to RStudio!
+
+## APA Style
+
+-   You need to use a csl (citation style guide) file to make sure references are properly formatted
+
+-   I have included the apa7.csl file in the project folder
+
+    -   This will format references/citations in accordance with APA 7th edition
+
+## Exercise
+
+-   Add the `csl` to your YAML and include the apa7.csl file
+
+---
+
+csl: apa7.csl
+
+---
+
+-   Render your document
+
+```{r}
+
+countdown(minutes = 2,
           color_background = "#FFCD00")
 ```
