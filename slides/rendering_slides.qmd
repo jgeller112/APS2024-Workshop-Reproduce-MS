@@ -163,7 +163,7 @@ countdown(minutes = 10,
 
     -   Website/book
 
-## Publish 
+## Publish
 
 -   Publish to a quarto webpage ([https://quartopub.com](https://quartopub.com/))
 
