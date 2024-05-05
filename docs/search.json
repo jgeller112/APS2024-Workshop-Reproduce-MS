@@ -541,14 +541,7 @@
     "href": "slides/analysis._slides.html#exercise-2",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
     "section": "Exercise",
-    "text": "Exercise\nThe workshop-materials contain 2 example scripts: do_addition.R and do_addition.py. You will use one of them to include the code in your Quarto document.\nGo to the Sourcing code chapter in the workshop book and complete the exercise!\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "slides/analysis._slides.html#other-options",
-    "href": "slides/analysis._slides.html#other-options",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Other options",
-    "text": "Other options\nOther options not discussed here:\n\nUse parts of an external script within the Quarto document, for example to only run a few selected lines.\nRun a script before or after rendering a Quarto document to a manuscript: Quarto Docs: Project Scripts\nUse code chunks from existing Quarto documents or Jupyter notebooks: Quarto v1.4 Release\nInclude entire Quarto documents or Jupyter notebooks within your current Quarto document: Quarto Docs: Includes"
+    "text": "Exercise\n\nThe workshop-materials contain 2 example scripts: do_addition.R and do_addition.py. You will use the R script to include the code in your Quarto document.\n\nGo to the analysis section on the website and complete the exercise!\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/code-chunks.html",

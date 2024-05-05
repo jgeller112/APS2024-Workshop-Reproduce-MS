@@ -13,7 +13,9 @@ format:
     controls: true
     incremental: false
     code-overflow: wrap
-    fontsize: "30pt"
+    width: 1920
+    height: 1080
+    fontsize: "40pt"
 ---
 
 # Introduction

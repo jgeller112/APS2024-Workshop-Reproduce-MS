@@ -8,7 +8,9 @@ format:
     controls: true
     code-overflow: wrap
     code-line-numbers: false
-    fontsize: "30pt"
+    width: 1920
+    height: 1080
+    fontsize: "40pt"
 ---
 
 # Writing {background-color="#FFCD00"}

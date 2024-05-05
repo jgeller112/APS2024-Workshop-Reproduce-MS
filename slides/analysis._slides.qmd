@@ -8,16 +8,18 @@ format:
     controls: true
     code-overflow: wrap
     incremental: true
-    fontsize: "30pt"
+    width: 1920
+    height: 1080
+    fontsize: "40pt"
 ---
 
 # Analysis {background-color="#FFCD00"}
 
 # Topics
 
-1.  Code Chunks
-2.  Inline Code
-3.  Sourcing Scripts
+1.  Code chunks
+2.  Inline code
+3.  Sourcing scripts
 
 # Code Chunks {background-color="#FFCD00"}
 
@@ -259,9 +261,9 @@ from your-script import function
 
 ## Exercise
 
-The `workshop-materials` contain 2 example scripts: `do_addition.R` and `do_addition.py`. You will use one of them to include the code in your Quarto document.
+-   The `workshop-materials` contain 2 example scripts: `do_addition.R` and `do_addition.py`. You will use the R script to include the code in your Quarto document.
 
-Go to the *Sourcing code* chapter in the workshop book and complete the exercise!
+    -   Go to the analysis section on the website and complete the exercise!
 
 ```{r}
 library(countdown)
@@ -269,12 +271,3 @@ library(countdown)
 countdown(minutes = 10,
           color_background = "#FFCD00")
 ```
-
-## Other options
-
-Other options not discussed here:
-
-1.  Use [*parts of* an external script](https://github.com/quarto-ext/include-code-files) within the Quarto document, for example to only run a few selected lines.
-2.  Run a script before or after rendering a Quarto document to a manuscript: [Quarto Docs: Project Scripts](https://quarto.org/docs/projects/scripts.html)
-3.  Use code chunks from existing Quarto documents or Jupyter notebooks: [Quarto v1.4 Release](https://cwickham.github.io/whats-new-in-quarto/#/embed-outputs-from-other-documents-1)
-4.  Include entire Quarto documents or Jupyter notebooks within your current Quarto document: [Quarto Docs: Includes](https://quarto.org/docs/authoring/includes.html)
