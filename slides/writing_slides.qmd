@@ -28,15 +28,67 @@ When writing the body of your document, you will use the [Markdown](https://dari
 
 > Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. - [*Markdown Guide*](https://www.markdownguide.org/getting-started/)
 
-## Markdown
 
-![](https://psy503-f2023.netlify.app/slides/03-rmd-quarto/images/Screen%20Shot%202023-09-14%20at%2010.34.26%20AM.png)
+## A World With Markdown
 
-. . .
+:::{.columns}
 
-## Introduction
+:::{.column}
+**Code**
 
-Welcome to my **awesome** class. You will learn all kinds of useful things about R markdown.
+``` md
+Welcome to my markdown document. 
+We can have **bold**, _italic_, 
+***bold and italics*** text.
+Also, we have:
+
+- An
+- Unordered
+- List
+
+Not bad right?
+```
+
+:::
+
+:::{.column}
+**Output**
+
+Welcome to my markdown document. We can have **bold**, *italic*, ***bold and italics*** text. Also, we have:
+
+-   An
+-   Unordered
+-   List
+
+Not bad right?
+:::
+
+:::
+
+##  {.empty}
+
+<br><br><br>
+
+::: {.r-fit-text .center .vertical-align}
+Markdown is the
+
+**lingua franca**
+
+to creating any kind of document
+:::
+
+## Markdown in the Wild: Reddit
+
+![Writing a post using markdown on [Stanford's Subreddit](https://reddit.com/r/stanford)](assets/quarto-images/example-markdown-post-reddit-stanford.png){fig-alt="Demo using markdown to make a post on the website Reddit.com"}
+
+## Markdown in the Wild: GitHub
+
+![Writing an issue using markdown on [GitHub](https://github.com)](assets/quarto-images/example-markdown-issue-github.png){fig-alt="Demo using markdown to create an issue on the website GitHub.com"}
+
+## Markdown Quick Reference In RStudio
+
+![Accessing the "Markdown Quick Reference" Guide inside of RStudio](assets/quarto-images/qmd-annotations/markdown-cheatsheet.png){height="400" fig-alt="Opening the built-in Markdown quick reference sheet inside of RStudio by going to the help menu and selecting 'Markdown Quick Reference'."}
+
 
 ## Learning Markdown
 
@@ -90,83 +142,152 @@ You can also use the **Visual Editor** in [VS Code](https://quarto.org/docs/visu
 | ```             |               |
 +-----------------+---------------+
 
-## Markdown Sneak Peek: Lists {.smaller}
+## Markdown Sneak Peek: Quotes
 
 ::: columns
-::: {.column width="50%"}
-``` markdown
-* unordered list
-  + sub-item 1
-    - sub-sub-item 1
-  + sub-item 2
+::: {.column width="45%"}
+**Code**
+
+``` md
+> "Never gonna give you up,
+>  never gonna let you down..."
+>
+> --- Rick Astley
 ```
 :::
 
-::: {.column width="50%"}
--   unordered list
-    -   sub-item 1
-        -   sub-sub-item 1
-    -   sub-item 2
+::: {.column width="45%"}
+**Output**
+
+> "Never gonna give you up, never gonna let you down..."
+>
+> --- Rick Astley
+
 :::
 :::
 
-. . .
+
+## Markdown Sneak Peek: Math
 
 ::: columns
-::: {.column width="50%"}
-``` markdown
-1. ordered list
-2. item 2
-   i. sub-item 1
-      A.  sub-sub-item 1
+::: {.column width="45%"}
+**Code**
+
+``` md
+Inline math: 
+$a^2 + b^2 = c^2$
+
+Display math (centered math):
+$$1 - x = y$$
 ```
 :::
 
-::: {.column width="50%"}
-1.  ordered list
-2.  item 2
-    i.  sub-item 1
-        A.  sub-sub-item 1
+::: {.column width="45%"}
+**Output**
+
+Inline math: $a^2 + b^2 = c^2$
+
+Display math (centered math): $$1 - x = y$$
 :::
 :::
 
-. . .
+## Markdown Sneak Peek: Lists  Unordered
 
 ::: columns
-::: {.column width="50%"}
-``` markdown
-*   item 2
-    
-    Continued (indent 4 spaces)
+::: {.column width="45%"}
+**Code**
+
+``` md
+My **un**ordered list:
+
+- Write Selection Simulation
+- Conference Abstracts
+     - UseR
+     - Learning at Scale
 ```
 :::
 
-::: {.column width="50%"}
--   item 2
+::: {.column width="45%"}
+**Output**
 
-    Continued (indent 4 spaces)
+My **un**ordered list:
+
+-   Write Selection Simulation
+-   Conference Abstracts
+    -   UseR
+    -   Learning at Scale
 :::
 :::
 
-. . .
+## Markdown Sneak Peek: Lists Ordered
+
 
 ::: columns
-::: {.column width="50%"}
-``` markdown
-term
-: definition
+::: {.column width="45%"}
+**Code**
+
+``` md
+My **ordered** list:
+
+1. Apples
+1. Bananas
+1. Chobani
+    1. Pineapple
+    1. Everything else
 ```
 :::
 
-::: {.column width="50%"}
+::: {.column width="45%"}
+**Output**
 
-term
+My **ordered** list:
 
-:   definition
+1.  Apples
+2.  Bananas
+3.  Chobani
+    1.  Pineapple
+    2.  Everything else
 :::
 :::
 
-## Markdown Sneak Peek: Links {.smaller}
+## Markdown sneak peek:  Summary
+
+::: callout-important
+Make sure a new line (space) exists between text and the first list item. For sublists or nested lists, indent **four spaces** to create a new level in the list.
+:::
+
+::: callout-tip
+To simplify ordered lists and allow for moving items in the list around, use `1.` for each item. If a list needs to be broken, numbering is only continued if each entry is labeled using `1.`, `2.`, `3.`, ... format.
+:::
+
+## Markdown sneak peek: Tables
+
+**Code**
+
+``` md
+| Left                    | Center          | Right   |
+|-------------------------|:---------------:|--------:|
+| Hey, check it out       | Colons provide  |    873  |
+| its **Markdown**        | alignment thus  |   1000  |
+| right in the table      | *centered* text |         |
+```
+
+**Output**
+
+| Left               |     Center      | Right |
+|--------------------|:---------------:|------:|
+| Hey, check it out  | Colons provide  |   873 |
+| its **Markdown**   | alignment thus  |  1000 |
+| right in the table | *centered* text |       |
+
+
+## Table: Tip
+
+::: callout-tip
+`Visual` mode provides a [`Table` menu](https://quarto.org/docs/visual-editor/#editor-toolbar) to setup [quarto tables](https://quarto.org/docs/authoring/tables.html) or use the [table generator](https://www.tablesgenerator.com/markdown_tables) website.
+:::
+
+## Markdown sneak peek: Links {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
@@ -227,42 +348,7 @@ Or embed an image: <br> ![penguins](https://allisonhorst.github.io/palmerpenguin
 :::
 :::
 
-## Markdown Sneak Peek: Tables
-
-::: columns
-::: {.column width="50%"}
-```         
-| Right | Left | Default | Center |
-|------:|:-----|---------|:------:|
-|   12  |  12  |    12   |    12  |
-|  123  |  123 |   123   |   123  |
-|    1  |    1 |     1   |     1  |
-```
-:::
-
-::: {.column .fragment width="50%"}
-| Right | Left | Default | Center |
-|------:|:-----|---------|:------:|
-|    12 | 12   | 12      |   12   |
-|   123 | 123  | 123     |  123   |
-|     1 | 1    | 1       |   1    |
-:::
-:::
-
-## Markdown Sneak Peek: Equations
-
--   Anything inside dollar signs `$` is treated as "inline" maths
--   `$$` is a standalone equation
--   Whitespace matters: `$x$` is an equation, `$x $` is not
--   Equations follow "LaTeX" rules
-
-## Equations are special
-
--   This $x^2$ is inline
-
--   This equation is standalone $$\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i$$
-
-## Markdown Sneak Peek: Callout blocks
+## Markdown sneak peek: Callout blocks
 
 -   Call-out blocks highlight sections of text that interrupt the flow of your regular text. Maybe it's a definition, a warning, or a sidenote
 
@@ -314,7 +400,7 @@ Here is something under construction
 This is an example of a 'folded' caution callout that can be expanded by the user. You can use \`collapse="true"\` to collapse it by default or \`collapse="false"\` to make a collapsible callout that is expanded by default.
 :::
 
-## Exercise
+## Markdown exercise
 
 1.  Go to the Writing/Reference section on the website and refer to the text provided in the *Exercise* section.
 
