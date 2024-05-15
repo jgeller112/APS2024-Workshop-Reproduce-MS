@@ -8,12 +8,10 @@ format:
     controls: true
     code-overflow: wrap
     incremental: true
-    width: 1920
-    height: 1080
-    fontsize: "40pt"
+    fontsize: "28pt"
 ---
 
-# Analysis {background-color="#FFCD00"}
+# Code Chunks: Text + Code + Output {background-color="#FFCD00"}
 
 # Topics
 
@@ -21,9 +19,7 @@ format:
 2.  Inline code
 3.  Sourcing scripts
 
-# Code Chunks {background-color="#FFCD00"}
-
-## What are Code Chunks? {.smaller}
+## What are Code Chunks?
 
 -   Specified place for code
 -   Executable
@@ -81,20 +77,20 @@ distinct_cyl = mtcars.drop_duplicates(subset=['cyl'])
 
 Useful [code chunk options](https://quarto.org/docs/computations/execution-options.html):
 
--   `#| eval: true`: Evaluates code chunk.
--   `#| echo: true`: Includes source code in output.
--   `#| output: true`: Includes *results* of code execution in output.
--   `#| warning: true`: Includes warnings in output.
--   `#| include: false`: Catch all for preventing anything from being included.
--   `#| label: something-meaningful`: Good practice to always include!
+## Customize Code Execution Options {.smaller}
 
-. . .
-
-Options for figure-creating code chunks:
-
--   `#| fig-cap: "your figure's caption"` : caption of the figure
--   `#| fig-width: 8` : width of the figure
--   `#| fig-height: 6` : height of the figure
+| Option       | Description                                                                |
+|----------------------|--------------------------------------------------|
+| `eval`       | Evaluate the code chunk.                                                   |
+| `echo`       | Include the source code in output                                          |
+| `output`     | Include code output results (`true`, `false`, or `asis`)                   |
+| `warning`    | Include warnings in the output.                                            |
+| `error`      | Include errors in the output (continues execution if error present).       |
+| `include`    | Catch all for preventing any output (code or results) from being included. |
+| `label`      | Please make sure to label your code chunks! It helps with debugging.       |
+| `fig-cap`    |  caption your figure                                                       |
+| `fig-width`  |  width of the figure                                                       |
+| `fig-height` | height of the figure                                                       |
 
 ## Code Chunk Options
 
@@ -127,8 +123,100 @@ Option 2: Visual editor: `Insert` \> `Code cell`
 Option 3: Shortcuts:
 
 -   **RStudio**: *Ctrl+Alt+I*
--   **VS Code**: *Ctrl+Shift+I*
--   **Jupyter Lab**: *B*
+
+
+## Demo: echo option
+
+`echo` hides code, but shows results.
+
+::: columns
+::: {.column width="45%"}
+**Code**
+
+```{{r}}
+#| label: ex-orig
+x = 1:10; y = 11:20
+plot(x, y)
+```
+
+```{{r}}
+#| label: ex-hide-code
+#| echo: false
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+
+::: {.column width="45%"}
+**Output**
+
+`ex-original` Output:
+
+```{r, echo = TRUE}
+#| label: ex-orig
+#| fig-height: 2.5
+x = 1:10; y = 11:20
+plot(x, y)
+```
+
+`ex-hide-code` Output:
+
+```{r}
+#| label: ex-hide-code
+#| echo: false
+#| fig-height: 2.5
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+:::
+
+## Demo: eval option
+
+`eval` shows code, but does not create results.
+
+::: columns
+::: {.column width="45%"}
+**Code**
+
+```{{r}}
+#| label: ex-orig
+x = 1:10; y = 11:20
+plot(x, y)
+```
+
+```{{r}}
+#| label: ex-not-run
+#| eval: false
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+
+::: {.column width="45%"}
+**Output**
+
+`ex-original` Output:
+
+```{r, echo = TRUE}
+#| label: ex-orig-2
+#| fig-height: 2.5
+x = 1:10; y = 11:20
+plot(x, y)
+```
+
+`ex-not-run` Output:
+
+```{r}
+#| label: ex-not-run
+#| eval: false
+#| echo: true
+x = 1:10; y = 11:20
+plot(x, y)
+```
+:::
+:::
+
 
 ## Exercise
 
@@ -157,6 +245,61 @@ Why?
 -   minimizes errors: no manual copy-pasting results
 -   automatic updating when data or code changes
 
+
+## Inline code
+
+Enclose the *R* expression using `` `r ` ``.
+
+**Code:**
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+There are &#96;r nrow(cars)&#96; observations in our data. 
+</code>
+</pre>
+</div>
+```
+**Output:**
+
+::: border
+There are `r nrow(cars)` observations in our data.
+:::
+
+::: callout-important
+If using `Visual` or `Source` mode, be advised the *R* expression will only substitute the value held by the variable when the Quarto document is **rendered**. That is, the value contained within the expression only appears in the **output** file.
+:::
+
+## Reference Code Chunk Variables Inline
+
+**Code:**
+
+```{{{r}}}
+#| label: calc-values
+#| echo: false
+x = 1:10
+x_mu = mean(x)
+x_sd = sd(x)
+```
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+The _mean_ of **x** is  &#96;r x_mu&#96; and
+the _standard deviation_ is &#96;r x_sd&#96;.
+</code>
+</pre>
+</div>
+```
+**Output:**
+
+::: border
+The mean of **x** is 5.5 and the *standard deviation* is 3.02765.
+:::
+
+
 ## Inline code: how?
 
 **In R**
@@ -174,20 +317,6 @@ penguins of the Adelie species in the dataset.
 
 ``` md
 There are `r sum(penguins$species=="Adelie")` penguins of the "Adelie" species in the dataset.
-```
-
-<br>
-
-**In Python (Quarto \>= 1.4)**[^1]
-
-[^1]: **Jupyter notebooks: also add `execute: enable: all` to the document yaml.**
-
-```{{{python}}}
-x = 5 + 5
-```
-
-``` md
-The answer to 5 + 5 is `{python} x`
 ```
 
 ## Exercise

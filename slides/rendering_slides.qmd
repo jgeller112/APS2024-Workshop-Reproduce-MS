@@ -7,8 +7,6 @@ format:
     navigation-mode: linear
     controls: true
     fontsize: "30pt"
-    width: 1920
-    height: 1080
 ---
 
 # Rendering {background-color="#FFCD00"}

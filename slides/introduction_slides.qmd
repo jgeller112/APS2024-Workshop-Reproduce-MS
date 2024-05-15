@@ -13,9 +13,7 @@ format:
     controls: true
     incremental: false
     code-overflow: wrap
-    width: 1920
-    height: 1080
-    fontsize: "40pt"
+    fontsize: "30pt"
     fig-width: 12
     fig-height: 14
 ---

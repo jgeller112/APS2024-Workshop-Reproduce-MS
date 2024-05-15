@@ -21,18 +21,39 @@
     "text": "Markdown Syntax\nWhen writing the body of your document, you will use the Markdown format.\n\n\nMarkdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. - Markdown Guide"
   },
   {
-    "objectID": "slides/writing_slides.html#markdown",
-    "href": "slides/writing_slides.html#markdown",
+    "objectID": "slides/writing_slides.html#a-world-with-markdown",
+    "href": "slides/writing_slides.html#a-world-with-markdown",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Markdown",
-    "text": "Markdown"
+    "section": "A World With Markdown",
+    "text": "A World With Markdown\n\n\nCode\nWelcome to my markdown document. \nWe can have **bold**, _italic_, \n***bold and italics*** text.\nAlso, we have:\n\n- An\n- Unordered\n- List\n\nNot bad right?\n\nOutput\nWelcome to my markdown document. We can have bold, italic, bold and italics text. Also, we have:\n\nAn\nUnordered\nList\n\nNot bad right?"
   },
   {
-    "objectID": "slides/writing_slides.html#introduction",
-    "href": "slides/writing_slides.html#introduction",
+    "objectID": "slides/writing_slides.html#section",
+    "href": "slides/writing_slides.html#section",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Introduction",
-    "text": "Introduction\nWelcome to my awesome class. You will learn all kinds of useful things about R markdown."
+    "section": "",
+    "text": "Markdown is the\nlingua franca\nto creating any kind of document"
+  },
+  {
+    "objectID": "slides/writing_slides.html#markdown-in-the-wild-reddit",
+    "href": "slides/writing_slides.html#markdown-in-the-wild-reddit",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Markdown in the Wild: Reddit",
+    "text": "Markdown in the Wild: Reddit\n\nWriting a post using markdown on Stanford’s Subreddit"
+  },
+  {
+    "objectID": "slides/writing_slides.html#markdown-in-the-wild-github",
+    "href": "slides/writing_slides.html#markdown-in-the-wild-github",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Markdown in the Wild: GitHub",
+    "text": "Markdown in the Wild: GitHub\n\nWriting an issue using markdown on GitHub"
+  },
+  {
+    "objectID": "slides/writing_slides.html#markdown-quick-reference-in-rstudio",
+    "href": "slides/writing_slides.html#markdown-quick-reference-in-rstudio",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Markdown Quick Reference In RStudio",
+    "text": "Markdown Quick Reference In RStudio\n\n\n\nAccessing the “Markdown Quick Reference” Guide inside of RStudio"
   },
   {
     "objectID": "slides/writing_slides.html#learning-markdown",
@@ -56,46 +77,67 @@
     "text": "Markdown Sneak Peek: Headers\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4"
   },
   {
-    "objectID": "slides/writing_slides.html#markdown-sneak-peek-lists",
-    "href": "slides/writing_slides.html#markdown-sneak-peek-lists",
+    "objectID": "slides/writing_slides.html#markdown-sneak-peek-quotes",
+    "href": "slides/writing_slides.html#markdown-sneak-peek-quotes",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Markdown Sneak Peek: Lists",
-    "text": "Markdown Sneak Peek: Lists\n\n\n* unordered list\n  + sub-item 1\n    - sub-sub-item 1\n  + sub-item 2\n\n\nunordered list\n\nsub-item 1\n\nsub-sub-item 1\n\nsub-item 2\n\n\n\n\n\n\n\n1. ordered list\n2. item 2\n   i. sub-item 1\n      A.  sub-sub-item 1\n\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\n\n\n\n\n*   item 2\n    \n    Continued (indent 4 spaces)\n\n\nitem 2\nContinued (indent 4 spaces)\n\n\n\n\n\n\n\nterm\n: definition\n\n\nterm\n\ndefinition"
+    "section": "Markdown Sneak Peek: Quotes",
+    "text": "Markdown Sneak Peek: Quotes\n\n\nCode\n&gt; \"Never gonna give you up,\n&gt;  never gonna let you down...\"\n&gt;\n&gt; --- Rick Astley\n\nOutput\n\n“Never gonna give you up, never gonna let you down…”\n— Rick Astley"
   },
   {
-    "objectID": "slides/writing_slides.html#markdown-sneak-peek-links",
-    "href": "slides/writing_slides.html#markdown-sneak-peek-links",
+    "objectID": "slides/writing_slides.html#markdown-sneak-peek-math",
+    "href": "slides/writing_slides.html#markdown-sneak-peek-math",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Markdown Sneak Peek: Links",
-    "text": "Markdown Sneak Peek: Links\n\n\n\nYou can embed [named hyperlinks](https://quarto.org/)\n\nYou can embed named hyperlinks\n\n\n\n\n\n\nSimply a direct url like &lt;https://quarto.org/&gt;\n\nSimply a direct url like https://quarto.org/\n\n\n\n\n\n\n\nLinks to [other places](#quarto-anatomy) in the document. \n\nLinks to other places in the document.\n\n\n\n\n\n\n\nOr embed an image: \n![penguins](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png)\n\nOr embed an image:"
+    "section": "Markdown Sneak Peek: Math",
+    "text": "Markdown Sneak Peek: Math\n\n\nCode\nInline math: \n$a^2 + b^2 = c^2$\n\nDisplay math (centered math):\n$$1 - x = y$$\n\nOutput\nInline math: \\(a^2 + b^2 = c^2\\)\nDisplay math (centered math): \\[1 - x = y\\]"
+  },
+  {
+    "objectID": "slides/writing_slides.html#markdown-sneak-peek-lists-unordered",
+    "href": "slides/writing_slides.html#markdown-sneak-peek-lists-unordered",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Markdown Sneak Peek: Lists Unordered",
+    "text": "Markdown Sneak Peek: Lists Unordered\n\n\nCode\nMy **un**ordered list:\n\n- Write Selection Simulation\n- Conference Abstracts\n     - UseR\n     - Learning at Scale\n\nOutput\nMy unordered list:\n\nWrite Selection Simulation\nConference Abstracts\n\nUseR\nLearning at Scale"
+  },
+  {
+    "objectID": "slides/writing_slides.html#markdown-sneak-peek-lists-ordered",
+    "href": "slides/writing_slides.html#markdown-sneak-peek-lists-ordered",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Markdown Sneak Peek: Lists Ordered",
+    "text": "Markdown Sneak Peek: Lists Ordered\n\n\nCode\nMy **ordered** list:\n\n1. Apples\n1. Bananas\n1. Chobani\n    1. Pineapple\n    1. Everything else\n\nOutput\nMy ordered list:\n\nApples\nBananas\nChobani\n\nPineapple\nEverything else"
+  },
+  {
+    "objectID": "slides/writing_slides.html#markdown-sneak-peek-summary",
+    "href": "slides/writing_slides.html#markdown-sneak-peek-summary",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Markdown sneak peek: Summary",
+    "text": "Markdown sneak peek: Summary\n\n\n\n\n\n\nImportant\n\n\nMake sure a new line (space) exists between text and the first list item. For sublists or nested lists, indent four spaces to create a new level in the list.\n\n\n\n\n\n\n\n\n\nTip\n\n\nTo simplify ordered lists and allow for moving items in the list around, use 1. for each item. If a list needs to be broken, numbering is only continued if each entry is labeled using 1., 2., 3., … format."
   },
   {
     "objectID": "slides/writing_slides.html#markdown-sneak-peek-tables",
     "href": "slides/writing_slides.html#markdown-sneak-peek-tables",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Markdown Sneak Peek: Tables",
-    "text": "Markdown Sneak Peek: Tables\n\n\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+    "section": "Markdown sneak peek: Tables",
+    "text": "Markdown sneak peek: Tables\nCode\n| Left                    | Center          | Right   |\n|-------------------------|:---------------:|--------:|\n| Hey, check it out       | Colons provide  |    873  |\n| its **Markdown**        | alignment thus  |   1000  |\n| right in the table      | *centered* text |         |\nOutput\n\n\n\nLeft\nCenter\nRight\n\n\n\n\nHey, check it out\nColons provide\n873\n\n\nits Markdown\nalignment thus\n1000\n\n\nright in the table\ncentered text"
   },
   {
-    "objectID": "slides/writing_slides.html#markdown-sneak-peek-equations",
-    "href": "slides/writing_slides.html#markdown-sneak-peek-equations",
+    "objectID": "slides/writing_slides.html#table-tip",
+    "href": "slides/writing_slides.html#table-tip",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Markdown Sneak Peek: Equations",
-    "text": "Markdown Sneak Peek: Equations\n\nAnything inside dollar signs $ is treated as “inline” maths\n$$ is a standalone equation\nWhitespace matters: $x$ is an equation, $x $ is not\nEquations follow “LaTeX” rules"
+    "section": "Table: Tip",
+    "text": "Table: Tip\n\n\n\n\n\n\nTip\n\n\nVisual mode provides a Table menu to setup quarto tables or use the table generator website."
   },
   {
-    "objectID": "slides/writing_slides.html#equations-are-special",
-    "href": "slides/writing_slides.html#equations-are-special",
+    "objectID": "slides/writing_slides.html#markdown-sneak-peek-links",
+    "href": "slides/writing_slides.html#markdown-sneak-peek-links",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Equations are special",
-    "text": "Equations are special\n\nThis \\(x^2\\) is inline\nThis equation is standalone \\[\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{n} x_i\\]"
+    "section": "Markdown sneak peek: Links",
+    "text": "Markdown sneak peek: Links\n\n\n\nYou can embed [named hyperlinks](https://quarto.org/)\n\nYou can embed named hyperlinks\n\n\n\n\n\n\nSimply a direct url like &lt;https://quarto.org/&gt;\n\nSimply a direct url like https://quarto.org/\n\n\n\n\n\n\n\nLinks to [other places](#quarto-anatomy) in the document. \n\nLinks to other places in the document.\n\n\n\n\n\n\n\nOr embed an image: \n![penguins](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png)\n\nOr embed an image:"
   },
   {
     "objectID": "slides/writing_slides.html#markdown-sneak-peek-callout-blocks",
     "href": "slides/writing_slides.html#markdown-sneak-peek-callout-blocks",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Markdown Sneak Peek: Callout blocks",
-    "text": "Markdown Sneak Peek: Callout blocks\n\nCall-out blocks highlight sections of text that interrupt the flow of your regular text. Maybe it’s a definition, a warning, or a sidenote\nWhen rendering your document to HTML, callout blocks are interactive and can be collapsed and opened.\n\n\n\n\n\n\nMy First Callout Block!\n\n\nSay things here"
+    "section": "Markdown sneak peek: Callout blocks",
+    "text": "Markdown sneak peek: Callout blocks\n\nCall-out blocks highlight sections of text that interrupt the flow of your regular text. Maybe it’s a definition, a warning, or a sidenote\nWhen rendering your document to HTML, callout blocks are interactive and can be collapsed and opened.\n\n\n\n\n\n\nMy First Callout Block!\n\n\nSay things here"
   },
   {
     "objectID": "slides/writing_slides.html#callout-blocks",
@@ -119,11 +161,11 @@
     "text": "Callout markdown syntax\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use `collapse=“true”` to collapse it by default or `collapse=“false”` to make a collapsible callout that is expanded by default."
   },
   {
-    "objectID": "slides/writing_slides.html#exercise",
-    "href": "slides/writing_slides.html#exercise",
+    "objectID": "slides/writing_slides.html#markdown-exercise",
+    "href": "slides/writing_slides.html#markdown-exercise",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Exercise",
-    "text": "Exercise\n\nGo to the Writing/Reference section on the website and refer to the text provided in the Exercise section.\nCopy the text into your Quarto document, like an Introduction of sorts, and reformat it with Markdown Syntax\nRender the document to HTML.\n\n\n\n\n−+\n10:00"
+    "section": "Markdown exercise",
+    "text": "Markdown exercise\n\nGo to the Writing/Reference section on the website and refer to the text provided in the Exercise section.\nCopy the text into your Quarto document, like an Introduction of sorts, and reformat it with Markdown Syntax\nRender the document to HTML.\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/writing_slides.html#bibtex-keys",
@@ -147,8 +189,8 @@
     "text": "Working With BibTex Keys\nThe typical workflow is as follows:\n\n\nFind a reference that you need in your manuscript.\nSave it to your Zotero library via the browser extension\nZotero automatically updates your .bib file through syncing with Zotero desktop and updating the .bib file.\nCite the references using the @ + reference identifier:\n\nIn-text citations: @nash51 OR @RMarkdownWritingReproducible\nBracketed citations: [@nash51] OR [@nash51, @RMarkdownWritingReproducible]\n\n\n\n\nMore info: https://quarto.org/docs/authoring/footnotes-and-citations.html"
   },
   {
-    "objectID": "slides/writing_slides.html#exercise-1",
-    "href": "slides/writing_slides.html#exercise-1",
+    "objectID": "slides/writing_slides.html#exercise",
+    "href": "slides/writing_slides.html#exercise",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
     "section": "Exercise",
     "text": "Exercise\nGo to the Referencing section on the website and refer to the instructions in the Exercise section.\nYou will go through the workflow of creating a .bib file that will be automatically updated by Zotero and integrating it with your Quarto document.\n\n\n\n−+\n10:00"
@@ -168,8 +210,8 @@
     "text": "APA Style\n\nYou need to use a csl (citation style guide) file to make sure references are properly formatted\nI have included the apa7.csl file in the project folder\n\nThis will format references/citations in accordance with APA 7th edition"
   },
   {
-    "objectID": "slides/writing_slides.html#exercise-2",
-    "href": "slides/writing_slides.html#exercise-2",
+    "objectID": "slides/writing_slides.html#exercise-1",
+    "href": "slides/writing_slides.html#exercise-1",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
     "section": "Exercise",
     "text": "Exercise\n\nAdd the csl to your YAML and include the apa7.csl file"
@@ -210,6 +252,13 @@
     "text": "What do we want?\n\nCombine narrative with code\nAutomatically generate figures and tables\nAutomatically render results in text\nFormat the content into a scientific paper (including citations!)\nSomething that looks pretty!\nRinse & repeat"
   },
   {
+    "objectID": "slides/introduction_slides.html#hello-quarto",
+    "href": "slides/introduction_slides.html#hello-quarto",
+    "title": "Reproducible Manuscripts in R",
+    "section": "Hello Quarto!",
+    "text": "Hello Quarto!\n:::{.columns}\n\n\nNext generation publishing system.\nUnify and extends the R Markdown ecosystem.\nDevelop and Switch formats without hassle."
+  },
+  {
     "objectID": "slides/introduction_slides.html#big-universe",
     "href": "slides/introduction_slides.html#big-universe",
     "title": "Reproducible Manuscripts in R",
@@ -222,6 +271,20 @@
     "title": "Reproducible Manuscripts in R",
     "section": "What is a Quarto?",
     "text": "What is a Quarto?"
+  },
+  {
+    "objectID": "slides/introduction_slides.html#how-quarto-works",
+    "href": "slides/introduction_slides.html#how-quarto-works",
+    "title": "Reproducible Manuscripts in R",
+    "section": "How Quarto Works",
+    "text": "How Quarto Works\nQuarto handles literate programming by using a series of programs:\n\nHow Quarto Works (Source)\nknitr executes all code chunks and creates a new markdown (.md) file\npandoc takes the markdown file generated and converts it to the desired format.\nRender inside of RStudio handles the interaction."
+  },
+  {
+    "objectID": "slides/introduction_slides.html#source-vs.-visual-mode",
+    "href": "slides/introduction_slides.html#source-vs.-visual-mode",
+    "title": "Reproducible Manuscripts in R",
+    "section": "Source vs. Visual Mode",
+    "text": "Source vs. Visual Mode\n\n\n\n\n\nSource Editing Mode\n\n\n\n\n\n\nVisual Editing Mode\n\n\n\n\n\nVisual Mode represents a What You See Is What You Get (WYSIWYG) editor. This mode is similar to Word."
   },
   {
     "objectID": "slides/introduction_slides.html#advantages",
@@ -238,11 +301,25 @@
     "text": "Advantages"
   },
   {
+    "objectID": "slides/introduction_slides.html#in-the-wild-data-science-gone-wrong",
+    "href": "slides/introduction_slides.html#in-the-wild-data-science-gone-wrong",
+    "title": "Reproducible Manuscripts in R",
+    "section": "In the Wild: Data Science Gone Wrong",
+    "text": "In the Wild: Data Science Gone Wrong\n\nRetraction Watch by Adam Marcus, Ivan Oransky, and Alison McCook Monitors for authors retracting their paper from a journal.\nOne such case of a paper being retracted due to an Excel error was the Growth in a Time of Debt by Reinhart & Rogoff.\n\nThe error was found by graduate student Thomas Herndon and co-authors Michael Ash, and Robert Pollin.\nThey published a critique highlighting the error.\nHerndon appeared on the Colbert Report to discuss their findings"
+  },
+  {
     "objectID": "slides/introduction_slides.html#advantages-2",
     "href": "slides/introduction_slides.html#advantages-2",
     "title": "Reproducible Manuscripts in R",
     "section": "Advantages",
     "text": "Advantages\n(2) Easy revisions and specification of desired figures and tables\nWhen revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper."
+  },
+  {
+    "objectID": "slides/introduction_slides.html#advantages-3",
+    "href": "slides/introduction_slides.html#advantages-3",
+    "title": "Reproducible Manuscripts in R",
+    "section": "Advantages",
+    "text": "Advantages\n(3) Promote computational reproducibility\n\nEasy verification and replication of research findings\nWhile programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time."
   },
   {
     "objectID": "slides/introduction_slides.html#getting-started",
@@ -252,6 +329,13 @@
     "text": "Getting started\n\nApproach 1: Start from scratch (now)\n\nCreating a Quarto manuscript\n\nRStudio: New Project &gt; New Directory &gt; Quarto Manuscript\n\n\n\n\n\n\n\n\nNote\n\n\nAlways start a new project folder!\n\n\n\nApproach 2: Start with a sample template (later)"
   },
   {
+    "objectID": "slides/introduction_slides.html#create-a-quarto-document",
+    "href": "slides/introduction_slides.html#create-a-quarto-document",
+    "title": "Reproducible Manuscripts in R",
+    "section": "Create a Quarto Document",
+    "text": "Create a Quarto Document\n\n\nIn the top left, click the White Plus and select “Quarto Document…”\n\n\n\nCreating a new Quarto Document\n\n\n\nIn the new prompt, enter a title, author name, and press “Create”\n\n\n\nNew Document Options"
+  },
+  {
     "objectID": "slides/introduction_slides.html#getting-started-1",
     "href": "slides/introduction_slides.html#getting-started-1",
     "title": "Reproducible Manuscripts in R",
@@ -259,11 +343,25 @@
     "text": "Getting started\n\nGo to the Getting Started section of website and complete each part\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "slides/introduction_slides.html#anatomy-of-a-quarto-document",
-    "href": "slides/introduction_slides.html#anatomy-of-a-quarto-document",
+    "objectID": "slides/introduction_slides.html#annotated-quarto-document",
+    "href": "slides/introduction_slides.html#annotated-quarto-document",
     "title": "Reproducible Manuscripts in R",
-    "section": "Anatomy of a Quarto Document",
-    "text": "Anatomy of a Quarto Document"
+    "section": "Annotated Quarto Document",
+    "text": "Annotated Quarto Document\n\nAnnotated sections of the “Hello Quarto” document related to document information, text formatting, and code execution"
+  },
+  {
+    "objectID": "slides/introduction_slides.html#output-of-a-quarto-document",
+    "href": "slides/introduction_slides.html#output-of-a-quarto-document",
+    "title": "Reproducible Manuscripts in R",
+    "section": "Output of a Quarto Document",
+    "text": "Output of a Quarto Document\n\nAnnotated source to output of the “Hello Quarto” document"
+  },
+  {
+    "objectID": "slides/introduction_slides.html#navigating-a-quarto-document",
+    "href": "slides/introduction_slides.html#navigating-a-quarto-document",
+    "title": "Reproducible Manuscripts in R",
+    "section": "Navigating a Quarto Document",
+    "text": "Navigating a Quarto Document\n\nAnnotated “Hello Quarto” document navigation options"
   },
   {
     "objectID": "slides/introduction_slides.html#metadata-header-yaml",
@@ -316,11 +414,18 @@
     "text": "How To Render\n1. In RStudio:\nClick the Render button OR use the quarto R package:\n\nlibrary(quarto)\nquarto_render(\"my-reproducible-manuscript.qmd\") # defaults to html\nquarto_render(\"my-reproducible-manuscript.qmd\", output_format = \"pdf\")\n\n\n2. Terminal: quarto render (--to [output format])\n\nquarto render\nquarto render my-reproducible-manuscript.qmd # defaults to html\nquarto render my-reproducible-manuscript.qmd --to pdf"
   },
   {
-    "objectID": "slides/rendering_slides.html#rendering-to-multiple-formats",
-    "href": "slides/rendering_slides.html#rendering-to-multiple-formats",
+    "objectID": "slides/rendering_slides.html#render-options",
+    "href": "slides/rendering_slides.html#render-options",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Rendering to Multiple Formats",
-    "text": "Rendering to Multiple Formats\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: \n  html: default\n  docx: default\n  pdf: default\n---\n\nThen:\n\nlibrary(quarto)\nquarto_render(\"my-reproducible-manuscript.qmd\")\n\nOR\n\nquarto render my-reproducible-manuscript.qmd\n\n\n\n\n\n\n\nNote\n\n\nthe Render button will not work for multiple formats."
+    "section": "Render Options",
+    "text": "Render Options\nRender as an HTML document\n---\ntitle: \"Hello Quarto\"\nauthor: \"JJB + Course\"\nformat: html\n---\nRender as a PDF\n---\ntitle: \"Hello Quarto\"\nauthor: \"JJB + Course\"\nformat: pdf\n---\nRender as a Word\n---\ntitle: \"Hello Quarto\"\nauthor: \"JJB + Course\"\nformat: docx\n---"
+  },
+  {
+    "objectID": "slides/rendering_slides.html#multi-format-render-options",
+    "href": "slides/rendering_slides.html#multi-format-render-options",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Multi-format Render Options",
+    "text": "Multi-format Render Options\nRender one Quarto document to many output options like HTML, Jupyter Notebook, PDF, and Word Document.\n---\ntitle: \"Hello Quarto\"\nauthor: \"JJB + Course\"\nformat: \n  html: default\n  ipynb: default # new format!\n  pdf: default\n  docx: default\n---\n\n\n\n\n\n\nNote\n\n\nQuarto supports many formats include PowerPoint (PPT), Revealjs, Beamer, Rich Text Format (RTF), and on. For details, see All Formats.\n\n\n\n\n\n\n\n\n\nNote\n\n\nthe Render button will not work for multiple formats."
   },
   {
     "objectID": "slides/rendering_slides.html#journal-formats",
@@ -358,18 +463,18 @@
     "text": "Exercise\n\nGo to the Rendering chapter in the workshop book and refer to the instructions in the Exercise section.\nYou will render your document into html and docx formats.\n\n\n\n\n−+\n10:00"
   },
   {
-    "objectID": "slides/rendering_slides.html#sharing",
-    "href": "slides/rendering_slides.html#sharing",
+    "objectID": "slides/rendering_slides.html#sharing-work",
+    "href": "slides/rendering_slides.html#sharing-work",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Sharing",
-    "text": "Sharing\n\nShare your manuscript\n\nOpen science framework (OSF)\nGithub\nWebsite/book"
+    "section": "Sharing Work",
+    "text": "Sharing Work\n\nOnce you are satisfied with the Quarto document, it’s time to publish your work!\nThe publishing step is important as the documents need to be viewed under the guise of a server\nThere are multiple options for publishing with Quarto, and we’ll present two of them"
   },
   {
-    "objectID": "slides/rendering_slides.html#publish",
-    "href": "slides/rendering_slides.html#publish",
+    "objectID": "slides/rendering_slides.html#publish-options",
+    "href": "slides/rendering_slides.html#publish-options",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Publish",
-    "text": "Publish\n\nPublish to a quarto webpage (https://quartopub.com)\n\nYou can find the blue Publishing icon in the following locations:\n\nThe upper right of the file editor\nThe document viewer when viewing a document\nThe embedded viewer when running a Shiny application\nThe Plots pane\n\nClick on icon\n\nAlso in terminal:\n\n\nquarto publish quarto-pub"
+    "section": "Publish Options",
+    "text": "Publish Options\n\nGitHub PagesQuarto Pub\n\n\n\nTo make your Quarto document accessible on GitHub Pages via Quarto, use the following command in your terminal:\n\nquarto publish gh-pages\n\nThis option is great if you want to share your document through a GitHub Pages website.\n\n\n\n\nAlternatively, you can publish your Quarto document on Quarto Pub via Quarto. Use the following command in your terminal:\n\nquarto publish quarto-pub\nOR:\n\nYou can find the blue Publishing icon in the following locations:\n\nThe upper right of the file editor\nThe document viewer when viewing a document\nThe embedded viewer when running a Shiny application\nThe Plots pane\n\nClick on icon"
   },
   {
     "objectID": "slides/rendering.html",
@@ -398,7 +503,7 @@
     "href": "slides/workshop-materials.html",
     "title": "Workshop Materials",
     "section": "",
-    "text": "Workshop Materials\nThe workshop materials consist of a project structure and dummy scripts that will be used during the session.\n\nRight-click on the following link and select Save Link As…: my-reproducible-manuscript.zip\nSave the zip file in a location that you can easily access. We recommend to not use the default download location of your browser.\nExtract the contents of the zipped file.\n\nThe materials should look like this:\nmy-reproducible-manuscript\n├── _freeze\n├── _manuscript\n├── _quarto.yml\n├── apa7.csl\n├── data\n│   └── data.csv\n├── index.qmd\n├── results\n├── scripts\n│   ├── do_addition.py\n│   ├── do_addition.R\n│   ├── dummy.py\n│   └── dummy.R\n├── README.md\n├── references.bib",
+    "text": "Workshop Materials\nThe workshop materials consist of a project structure and dummy scripts that will be used during the session.\n\nRight-click on the following link and select Save Link As…: my-reproducible-manuscript.zip\nSave the zip file in a location that you can easily access. We recommend to not use the default download location of your browser.\nExtract the contents of the zipped file.\n\nThe materials should look like this:\nmy-reproducible-manuscript\n├── _freeze\n├── _manuscript\n├── _quarto.yml\n├── data\n│   └── data.csv\n├── index.qmd\n├── results\n├── scripts\n│   ├── do_addition.py\n│   ├── do_addition.R\n│   ├── dummy.py\n│   └── dummy.R\n├── README.md\n├── references.bib",
     "crumbs": [
       "Workshop",
       "Materials"
@@ -409,7 +514,7 @@
     "href": "index.html",
     "title": "APS 2024 Workshop - Reproducible Manuscripts in R",
     "section": "",
-    "text": "Welcome!\nOpen Science practices are becoming central to the way research is conducted. In this workshop, you will learn to set up a reproducible workflow to create a publication-ready manuscript that combines data, R or Python code, text, and references.\nWe will use the Quarto publishing system in conjunction with R or Python to create a publication-ready manuscript that combines data, code, text, and references. More specifically, you will learn how to:\n\nCreate a reproducible project (folder) structure\nUse Markdown syntax effectively for writing text\nRun analyses in code chunks or cells\nManage references using Zotero and Better BibTex for Zotero\nRender your Quarto manuscript to docx, HTML, and pdf files\nShare your project to a website\n\nThis workflow reduces the amount of human error, improves computational reproducibility and makes updating your scientific manuscript more efficient.\nBy the end of the workshop, you will be sufficiently familiar with the tools and components behind a reproducible manunscript, so you can implement the workflow in your own research projects.\nOur workshop material is licensed under a Creative Commons Attribution 4.0 International License. You can view the license on our GitHub repository.",
+    "text": "{{&lt;qrcode https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/&gt;}}\n\n\nWelcome!\nOpen Science practices are becoming central to the way research is conducted. In this workshop, you will learn to set up a reproducible workflow to create a publication-ready manuscript that combines data, R or Python code, text, and references.\nWe will use the Quarto publishing system in conjunction with R or Python to create a publication-ready manuscript that combines data, code, text, and references. More specifically, you will learn how to:\n\nCreate a reproducible project (folder) structure\nUse Markdown syntax effectively for writing text\nRun analyses in code chunks or cells\nManage references using Zotero and Better BibTex for Zotero\nRender your Quarto manuscript to docx, HTML, and pdf files\nShare your project to a website\n\nThis workflow reduces the amount of human error, improves computational reproducibility and makes updating your scientific manuscript more efficient.\nBy the end of the workshop, you will be sufficiently familiar with the tools and components behind a reproducible manunscript, so you can implement the workflow in your own research projects.\nOur workshop material is licensed under a Creative Commons Attribution 4.0 International License. You can view the license on our GitHub repository.",
     "crumbs": [
       "Workshop",
       "Home"
@@ -478,7 +583,14 @@
     "href": "slides/analysis._slides.html#code-chunk-options",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
     "section": "Code Chunk Options",
-    "text": "Code Chunk Options\nUseful code chunk options:\n\n#| eval: true: Evaluates code chunk.\n#| echo: true: Includes source code in output.\n#| output: true: Includes results of code execution in output.\n#| warning: true: Includes warnings in output.\n#| include: false: Catch all for preventing anything from being included.\n#| label: something-meaningful: Good practice to always include!\n\n\nOptions for figure-creating code chunks:\n\n#| fig-cap: \"your figure's caption\" : caption of the figure\n#| fig-width: 8 : width of the figure\n#| fig-height: 6 : height of the figure"
+    "text": "Code Chunk Options\nUseful code chunk options:"
+  },
+  {
+    "objectID": "slides/analysis._slides.html#customize-code-execution-options",
+    "href": "slides/analysis._slides.html#customize-code-execution-options",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Customize Code Execution Options",
+    "text": "Customize Code Execution Options\n\n\n\n\n\n\n\nOption\nDescription\n\n\n\n\neval\nEvaluate the code chunk.\n\n\necho\nInclude the source code in output\n\n\noutput\nInclude code output results (true, false, or asis)\n\n\nwarning\nInclude warnings in the output.\n\n\nerror\nInclude errors in the output (continues execution if error present).\n\n\ninclude\nCatch all for preventing any output (code or results) from being included.\n\n\nlabel\nPlease make sure to label your code chunks! It helps with debugging.\n\n\nfig-cap\ncaption your figure\n\n\nfig-width\nwidth of the figure\n\n\nfig-height\nheight of the figure"
   },
   {
     "objectID": "slides/analysis._slides.html#code-chunk-options-1",
@@ -492,7 +604,21 @@
     "href": "slides/analysis._slides.html#inserting-code-chunks",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
     "section": "Inserting Code Chunks",
-    "text": "Inserting Code Chunks\nOption 1: Type it out\n\nOption 2: Visual editor: Insert &gt; Code cell\n\n\nOption 3: Shortcuts:\n\nRStudio: Ctrl+Alt+I\nVS Code: Ctrl+Shift+I\nJupyter Lab: B"
+    "text": "Inserting Code Chunks\nOption 1: Type it out\n\nOption 2: Visual editor: Insert &gt; Code cell\n\n\nOption 3: Shortcuts:\n\nRStudio: Ctrl+Alt+I"
+  },
+  {
+    "objectID": "slides/analysis._slides.html#demo-echo-option",
+    "href": "slides/analysis._slides.html#demo-echo-option",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Demo: echo option",
+    "text": "Demo: echo option\necho hides code, but shows results.\n\n\nCode\n```{r}\n#| label: ex-orig\nx = 1:10; y = 11:20\nplot(x, y)\n```\n```{r}\n#| label: ex-hide-code\n#| echo: false\nx = 1:10; y = 11:20\nplot(x, y)\n```\n\nOutput\nex-original Output:\n\nx = 1:10; y = 11:20\nplot(x, y)\n\n\n\n\n\n\n\n\nex-hide-code Output:"
+  },
+  {
+    "objectID": "slides/analysis._slides.html#demo-eval-option",
+    "href": "slides/analysis._slides.html#demo-eval-option",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Demo: eval option",
+    "text": "Demo: eval option\neval shows code, but does not create results.\n\n\nCode\n```{r}\n#| label: ex-orig\nx = 1:10; y = 11:20\nplot(x, y)\n```\n```{r}\n#| label: ex-not-run\n#| eval: false\nx = 1:10; y = 11:20\nplot(x, y)\n```\n\nOutput\nex-original Output:\n\nx = 1:10; y = 11:20\nplot(x, y)\n\n\n\n\n\n\n\n\nex-not-run Output:\n\nx = 1:10; y = 11:20\nplot(x, y)"
   },
   {
     "objectID": "slides/analysis._slides.html#exercise",
@@ -509,11 +635,25 @@
     "text": "Inline code: what & why?\nInsert results or (quick) calculations into running text, without additional text formatting. \n\nWhy?\n\nreport and describe results reproducibly\nminimizes errors: no manual copy-pasting results\nautomatic updating when data or code changes"
   },
   {
+    "objectID": "slides/analysis._slides.html#inline-code-1",
+    "href": "slides/analysis._slides.html#inline-code-1",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Inline code",
+    "text": "Inline code\nEnclose the R expression using `r `.\nCode:\n\n\nThere are `r nrow(cars)` observations in our data. \n\n\n\nOutput:\n\nThere are 50 observations in our data.\n\n\n\n\n\n\n\nImportant\n\n\nIf using Visual or Source mode, be advised the R expression will only substitute the value held by the variable when the Quarto document is rendered. That is, the value contained within the expression only appears in the output file."
+  },
+  {
+    "objectID": "slides/analysis._slides.html#reference-code-chunk-variables-inline",
+    "href": "slides/analysis._slides.html#reference-code-chunk-variables-inline",
+    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "section": "Reference Code Chunk Variables Inline",
+    "text": "Reference Code Chunk Variables Inline\nCode:\n```{{r}}\n#| label: calc-values\n#| echo: false\nx = 1:10\nx_mu = mean(x)\nx_sd = sd(x)\n```\n\n\nThe _mean_ of **x** is  `r x_mu` and\nthe _standard deviation_ is `r x_sd`.\n\n\n\nOutput:\n\nThe mean of x is 5.5 and the standard deviation is 3.02765."
+  },
+  {
     "objectID": "slides/analysis._slides.html#inline-code-how",
     "href": "slides/analysis._slides.html#inline-code-how",
     "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
     "section": "Inline code: how?",
-    "text": "Inline code: how?\nIn R\nThere are `r sum(penguins$Species=='Adelie')` \npenguins of the Adelie species in the dataset.\nThere are 152 penguins of the \"Adelie\" species in the dataset.\n\nIn Python (Quarto &gt;= 1.4)1\n```{{python}}\nx = 5 + 5\n```\nThe answer to 5 + 5 is `{python} x`\nJupyter notebooks: also add execute: enable: all to the document yaml."
+    "text": "Inline code: how?\nIn R\nThere are `r sum(penguins$Species=='Adelie')` \npenguins of the Adelie species in the dataset.\nThere are 152 penguins of the \"Adelie\" species in the dataset."
   },
   {
     "objectID": "slides/analysis._slides.html#exercise-1",
@@ -607,180 +747,5 @@
     "title": "References",
     "section": "",
     "text": "References"
-  },
-  {
-    "objectID": "slides/rendering_slides.html#sharing-work",
-    "href": "slides/rendering_slides.html#sharing-work",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Sharing Work",
-    "text": "Sharing Work\n\nOnce you are satisfied with the Quarto document, it’s time to publish your work!\nThe publishing step is important as the documents need to be viewed under the guise of a server\nThere are multiple options for publishing with Quarto, and we’ll present two of them"
-  },
-  {
-    "objectID": "slides/rendering_slides.html#publish-options",
-    "href": "slides/rendering_slides.html#publish-options",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Publish Options",
-    "text": "Publish Options\n\nGitHub PagesQuarto Pub\n\n\n\nTo make your Quarto document accessible on GitHub Pages via Quarto, use the following command in your terminal:\n\nquarto publish gh-pages\n\nThis option is great if you want to share your document through a GitHub Pages website.\n\n\n\n\nAlternatively, you can publish your Quarto document on Quarto Pub via Quarto. Use the following command in your terminal:\n\nquarto publish quarto-pub\nOR:\n\nYou can find the blue Publishing icon in the following locations:\n\nThe upper right of the file editor\nThe document viewer when viewing a document\nThe embedded viewer when running a Shiny application\nThe Plots pane\n\nClick on icon"
-  },
-  {
-    "objectID": "slides/writing_slides.html#a-world-with-markdown",
-    "href": "slides/writing_slides.html#a-world-with-markdown",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "A World With Markdown",
-    "text": "A World With Markdown\n\n\nCode\nWelcome to my markdown document. \nWe can have **bold**, _italic_, \n***bold and italics*** text.\nAlso, we have:\n\n- An\n- Unordered\n- List\n\nNot bad right?\n\nOutput\nWelcome to my markdown document. We can have bold, italic, bold and italics text. Also, we have:\n\nAn\nUnordered\nList\n\nNot bad right?"
-  },
-  {
-    "objectID": "slides/writing_slides.html#section",
-    "href": "slides/writing_slides.html#section",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "",
-    "text": "Markdown is the\nlingua franca\nto creating any kind of document"
-  },
-  {
-    "objectID": "slides/writing_slides.html#markdown-in-the-wild-reddit",
-    "href": "slides/writing_slides.html#markdown-in-the-wild-reddit",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Markdown in the Wild: Reddit",
-    "text": "Markdown in the Wild: Reddit\n\nWriting a post using markdown on Stanford’s Subreddit"
-  },
-  {
-    "objectID": "slides/writing_slides.html#markdown-in-the-wild-github",
-    "href": "slides/writing_slides.html#markdown-in-the-wild-github",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Markdown in the Wild: GitHub",
-    "text": "Markdown in the Wild: GitHub\n\nWriting an issue using markdown on GitHub"
-  },
-  {
-    "objectID": "slides/writing_slides.html#markdown-quick-reference-in-rstudio",
-    "href": "slides/writing_slides.html#markdown-quick-reference-in-rstudio",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Markdown Quick Reference In RStudio",
-    "text": "Markdown Quick Reference In RStudio\n\n\n\nAccessing the “Markdown Quick Reference” Guide inside of RStudio"
-  },
-  {
-    "objectID": "slides/writing_slides.html#quotes",
-    "href": "slides/writing_slides.html#quotes",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Quotes",
-    "text": "Quotes\n\n\nCode\n&gt; \"Never gonna give you up,\n&gt;  never gonna let you down...\"\n&gt;\n&gt; --- Rick Astley\n\nOutput\n\n“Never gonna give you up, never gonna let you down…”\n— Rick Astley"
-  },
-  {
-    "objectID": "slides/writing_slides.html#math",
-    "href": "slides/writing_slides.html#math",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Math",
-    "text": "Math\n\n\nCode\nInline math: \n$a^2 + b^2 = c^2$\n\nDisplay math (centered math):\n$$1 - x = y$$\n\nOutput\nInline math: \\(a^2 + b^2 = c^2\\)\nDisplay math (centered math): \\[1 - x = y\\]"
-  },
-  {
-    "objectID": "slides/writing_slides.html#lists-unordered",
-    "href": "slides/writing_slides.html#lists-unordered",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Lists: Unordered",
-    "text": "Lists: Unordered\n\n\nCode\nMy **un**ordered list:\n\n- Write Selection Simulation\n- Conference Abstracts\n     - UseR\n     - Learning at Scale\n\nOutput\nMy unordered list:\n\nWrite Selection Simulation\nConference Abstracts\n\nUseR\nLearning at Scale"
-  },
-  {
-    "objectID": "slides/writing_slides.html#lists-ordered",
-    "href": "slides/writing_slides.html#lists-ordered",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Lists: Ordered",
-    "text": "Lists: Ordered\n\n\nCode\nMy **ordered** list:\n\n1. Apples\n1. Bananas\n1. Chobani\n    1. Pineapple\n    1. Everything else\n\nOutput\nMy ordered list:\n\nApples\nBananas\nChobani\n\nPineapple\nEverything else"
-  },
-  {
-    "objectID": "slides/writing_slides.html#list-summary",
-    "href": "slides/writing_slides.html#list-summary",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "List: Summary",
-    "text": "List: Summary\n\n\n\n\n\n\nImportant\n\n\nMake sure a new line (space) exists between text and the first list item. For sublists or nested lists, indent four spaces to create a new level in the list.\n\n\n\n\n\n\n\n\n\nTip\n\n\nTo simplify ordered lists and allow for moving items in the list around, use 1. for each item. If a list needs to be broken, numbering is only continued if each entry is labeled using 1., 2., 3., … format."
-  },
-  {
-    "objectID": "slides/writing_slides.html#tables",
-    "href": "slides/writing_slides.html#tables",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Tables",
-    "text": "Tables\nCode\n| Left                    | Center          | Right   |\n|-------------------------|:---------------:|--------:|\n| Hey, check it out       | Colons provide  |    873  |\n| its **Markdown**        | alignment thus  |   1000  |\n| right in the table      | *centered* text |         |\nOutput\n\n\n\nLeft\nCenter\nRight\n\n\n\n\nHey, check it out\nColons provide\n873\n\n\nits Markdown\nalignment thus\n1000\n\n\nright in the table\ncentered text"
-  },
-  {
-    "objectID": "slides/writing_slides.html#table-tip",
-    "href": "slides/writing_slides.html#table-tip",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Table: Tip",
-    "text": "Table: Tip\n\n\n\n\n\n\nTip\n\n\nVisual mode provides a Table menu to setup quarto tables or use the table generator website."
-  },
-  {
-    "objectID": "slides/introduction_slides.html#create-a-quarto-document",
-    "href": "slides/introduction_slides.html#create-a-quarto-document",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Create a Quarto Document",
-    "text": "Create a Quarto Document\n\n\nIn the top left, click the White Plus and select “Quarto Document…”\n\n\n\nCreating a new Quarto Document\n\n\n\nIn the new prompt, enter a title, author name, and press “Create”\n\n\n\nNew Document Options"
-  },
-  {
-    "objectID": "slides/introduction_slides.html#annotated-quarto-document",
-    "href": "slides/introduction_slides.html#annotated-quarto-document",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Annotated Quarto Document",
-    "text": "Annotated Quarto Document\n\nAnnotated sections of the “Hello Quarto” document related to document information, text formatting, and code execution"
-  },
-  {
-    "objectID": "slides/introduction_slides.html#output-of-a-quarto-document",
-    "href": "slides/introduction_slides.html#output-of-a-quarto-document",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Output of a Quarto Document",
-    "text": "Output of a Quarto Document\n\nAnnotated source to output of the “Hello Quarto” document"
-  },
-  {
-    "objectID": "slides/introduction_slides.html#navigating-a-quarto-document",
-    "href": "slides/introduction_slides.html#navigating-a-quarto-document",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Navigating a Quarto Document",
-    "text": "Navigating a Quarto Document\n\nAnnotated “Hello Quarto” document navigation options"
-  },
-  {
-    "objectID": "slides/rendering_slides.html#render-options",
-    "href": "slides/rendering_slides.html#render-options",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Render Options",
-    "text": "Render Options\nRender as an HTML document\n---\ntitle: \"Hello Quarto\"\nauthor: \"JJB + Course\"\nformat: html\n---\nRender as a PDF\n---\ntitle: \"Hello Quarto\"\nauthor: \"JJB + Course\"\nformat: pdf\n---\nRender as a Word\n---\ntitle: \"Hello Quarto\"\nauthor: \"JJB + Course\"\nformat: docx\n---"
-  },
-  {
-    "objectID": "slides/rendering_slides.html#multi-format-render-options",
-    "href": "slides/rendering_slides.html#multi-format-render-options",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
-    "section": "Multi-format Render Options",
-    "text": "Multi-format Render Options\nRender one Quarto document to many output options like HTML, Jupyter Notebook, PDF, and Word Document.\n---\ntitle: \"Hello Quarto\"\nauthor: \"JJB + Course\"\nformat: \n  html: default\n  ipynb: default # new format!\n  pdf: default\n  docx: default\n---\n\n\n\n\n\n\nNote\n\n\nQuarto supports many formats include PowerPoint (PPT), Revealjs, Beamer, Rich Text Format (RTF), and on. For details, see All Formats.\n\n\n\n\n\n\n\n\n\nNote\n\n\nthe Render button will not work for multiple formats."
-  },
-  {
-    "objectID": "slides/introduction_slides.html#hello-quarto",
-    "href": "slides/introduction_slides.html#hello-quarto",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Hello Quarto!",
-    "text": "Hello Quarto!\n:::{.columns}\n\n\nNext generation publishing system.\nUnify and extends the R Markdown ecosystem.\nDevelop and Switch formats without hassle."
-  },
-  {
-    "objectID": "slides/introduction_slides.html#how-quarto-works",
-    "href": "slides/introduction_slides.html#how-quarto-works",
-    "title": "Reproducible Manuscripts in R",
-    "section": "How Quarto Works",
-    "text": "How Quarto Works\nQuarto handles literate programming by using a series of programs:\n\nHow Quarto Works (Source)\nknitr executes all code chunks and creates a new markdown (.md) file\npandoc takes the markdown file generated and converts it to the desired format.\nRender inside of RStudio handles the interaction."
-  },
-  {
-    "objectID": "slides/introduction_slides.html#source-vs.-visual-mode",
-    "href": "slides/introduction_slides.html#source-vs.-visual-mode",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Source vs. Visual Mode",
-    "text": "Source vs. Visual Mode\n\n\n\n\n\nSource Editing Mode\n\n\n\n\n\n\nVisual Editing Mode\n\n\n\n\n\nVisual Mode represents a What You See Is What You Get (WYSIWYG) editor. This mode is similar to Word."
-  },
-  {
-    "objectID": "slides/introduction_slides.html#in-the-wild-data-science-gone-wrong",
-    "href": "slides/introduction_slides.html#in-the-wild-data-science-gone-wrong",
-    "title": "Reproducible Manuscripts in R",
-    "section": "In the Wild: Data Science Gone Wrong",
-    "text": "In the Wild: Data Science Gone Wrong\n\nRetraction Watch by Adam Marcus, Ivan Oransky, and Alison McCook Monitors for authors retracting their paper from a journal.\nOne such case of a paper being retracted due to an Excel error was the Growth in a Time of Debt by Reinhart & Rogoff.\n\nThe error was found by graduate student Thomas Herndon and co-authors Michael Ash, and Robert Pollin.\nThey published a critique highlighting the error.\nHerndon appeared on the Colbert Report to discuss their findings"
-  },
-  {
-    "objectID": "slides/introduction_slides.html#advantages-3",
-    "href": "slides/introduction_slides.html#advantages-3",
-    "title": "Reproducible Manuscripts in R",
-    "section": "Advantages",
-    "text": "Advantages\n(3) Promote computational reproducibility\n\nEasy verification and replication of research findings\nWhile programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time."
   }
 ]

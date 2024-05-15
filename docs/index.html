@@ -39,7 +39,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
-<script src="site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -198,12 +197,8 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/clipboard-3252699954.png" class="img-fluid"></p>
 <p><img src="images/clipboard-255692279.png" class="img-fluid"></p>
 <center>
-<div id="qrcode" class="qrcode"></div>
-<script type="text/javascript">
-var qrcode = new QRCode("qrcode", {"height":128,"width":128,"text":"https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/","colorLight":"#ffffff","colorDark":"#000000"});
-</script>
-    
-<p></p></center><p></p>
+<p>{{&lt;qrcode https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/&gt;}}</p>
+</center>
 <section id="welcome" class="level1 unnumbered">
 <h1 class="unnumbered">Welcome!</h1>
 <p>Open Science practices are becoming central to the way research is conducted. In this workshop, you will learn to set up a reproducible workflow to create a publication-ready manuscript that combines data, R or Python code, text, and references.</p>
