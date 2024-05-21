@@ -4,7 +4,7 @@ title: " Reproducible Manuscripts in R Worksho"
 
 # Welcome! {.unnumbered}
 
-<center>{{\<qrcode https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/\>}}</center>
+{{< qrcode https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS >}}
 
 Open Science practices are becoming central to the way research is conducted. In this workshop, you will learn to set up a reproducible workflow to create a publication-ready manuscript that combines data, R or Python code, text, and references.
 

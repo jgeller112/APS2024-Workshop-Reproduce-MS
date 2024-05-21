@@ -256,7 +256,7 @@
     "href": "slides/introduction_slides.html#hello-quarto",
     "title": "Reproducible Manuscripts in R",
     "section": "Hello Quarto!",
-    "text": "Hello Quarto!\n:::{.columns}\n\n\nNext generation publishing system.\nUnify and extends the R Markdown ecosystem.\nDevelop and Switch formats without hassle."
+    "text": "Hello Quarto!\n\n\n\nNext generation publishing system.\nUnify and extends the R Markdown ecosystem.\nDevelop and Switch formats without hassle."
   },
   {
     "objectID": "slides/introduction_slides.html#big-universe",
@@ -514,7 +514,7 @@
     "href": "index.html",
     "title": "Reproducible Manuscripts in R Worksho",
     "section": "",
-    "text": "Welcome!\n\n{{&lt;qrcode https://jgeller112.github.io/APS2024-Workshop-Reproduce-MS/&gt;}}\n\nOpen Science practices are becoming central to the way research is conducted. In this workshop, you will learn to set up a reproducible workflow to create a publication-ready manuscript that combines data, R or Python code, text, and references.\nWe will use the Quarto publishing system in conjunction with R or Python to create a publication-ready manuscript that combines data, code, text, and references. More specifically, you will learn how to:\n\nCreate a reproducible project (folder) structure\nUse Markdown syntax effectively for writing text\nRun analyses in code chunks or cells\nManage references using Zotero and Better BibTex for Zotero\nRender your Quarto manuscript to docx, HTML, and pdf files\nShare your project to a website\n\nThis workflow reduces the amount of human error, improves computational reproducibility and makes updating your scientific manuscript more efficient.\nBy the end of the workshop, you will be sufficiently familiar with the tools and components behind a reproducible manunscript, so you can implement the workflow in your own research projects.\nOur workshop material is licensed under a Creative Commons Attribution 4.0 International License. You can view the license on our GitHub repository.",
+    "text": "Welcome!\n\n\n    \nOpen Science practices are becoming central to the way research is conducted. In this workshop, you will learn to set up a reproducible workflow to create a publication-ready manuscript that combines data, R or Python code, text, and references.\nWe will use the Quarto publishing system in conjunction with R or Python to create a publication-ready manuscript that combines data, code, text, and references. More specifically, you will learn how to:\n\nCreate a reproducible project (folder) structure\nUse Markdown syntax effectively for writing text\nRun analyses in code chunks or cells\nManage references using Zotero and Better BibTex for Zotero\nRender your Quarto manuscript to docx, HTML, and pdf files\nShare your project to a website\n\nThis workflow reduces the amount of human error, improves computational reproducibility and makes updating your scientific manuscript more efficient.\nBy the end of the workshop, you will be sufficiently familiar with the tools and components behind a reproducible manunscript, so you can implement the workflow in your own research projects.\nOur workshop material is licensed under a Creative Commons Attribution 4.0 International License. You can view the license on our GitHub repository.",
     "crumbs": [
       "Workshop",
       "Home"
@@ -567,119 +567,119 @@
   {
     "objectID": "slides/analysis._slides.html#what-are-code-chunks",
     "href": "slides/analysis._slides.html#what-are-code-chunks",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "What are Code Chunks?",
     "text": "What are Code Chunks?\n\nSpecified place for code\nExecutable\nWeaved between between text\nMay print output or create new variables, for example\n\n\n\n```{{r}}\n#| echo: true\n1993 + 2023\n```\n\n\n[1] 4016"
   },
   {
     "objectID": "slides/analysis._slides.html#anatomy-of-a-code-chunk",
     "href": "slides/analysis._slides.html#anatomy-of-a-code-chunk",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Anatomy of a Code Chunk",
     "text": "Anatomy of a Code Chunk\n\n\n\nOn each end of the code chunk: 3 backticks: ``` **\nCurly brackets: engine: {r} or {python} **\nTop of chunk: Code chunk options, with hashpipe: #|\n\n\n```{r}\n#| label: cars-r\n#| echo: false\nmtcars %&gt;% \n  distinct(cyl)\n```\n\n```{python}\n#| label: car-py\n#| echo: false\ndistinct_cyl = mtcars.drop_duplicates(subset=['cyl'])\n```\n\n\n** not needed in a code cell in a Jupyter notebook!"
   },
   {
     "objectID": "slides/analysis._slides.html#code-chunk-options",
     "href": "slides/analysis._slides.html#code-chunk-options",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Code Chunk Options",
     "text": "Code Chunk Options\nUseful code chunk options:"
   },
   {
     "objectID": "slides/analysis._slides.html#customize-code-execution-options",
     "href": "slides/analysis._slides.html#customize-code-execution-options",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Customize Code Execution Options",
     "text": "Customize Code Execution Options\n\n\n\n\n\n\n\nOption\nDescription\n\n\n\n\neval\nEvaluate the code chunk.\n\n\necho\nInclude the source code in output\n\n\noutput\nInclude code output results (true, false, or asis)\n\n\nwarning\nInclude warnings in the output.\n\n\nerror\nInclude errors in the output (continues execution if error present).\n\n\ninclude\nCatch all for preventing any output (code or results) from being included.\n\n\nlabel\nPlease make sure to label your code chunks! It helps with debugging.\n\n\nfig-cap\ncaption your figure\n\n\nfig-width\nwidth of the figure\n\n\nfig-height\nheight of the figure"
   },
   {
     "objectID": "slides/analysis._slides.html#code-chunk-options-1",
     "href": "slides/analysis._slides.html#code-chunk-options-1",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Code Chunk Options",
     "text": "Code Chunk Options\nOptions for all code chunks: include in yaml (top of the document).\n\nFor example…\n---\nformat: html\nexecute:\n  echo: false\n---\n… hides all code in the output!"
   },
   {
     "objectID": "slides/analysis._slides.html#inserting-code-chunks",
     "href": "slides/analysis._slides.html#inserting-code-chunks",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Inserting Code Chunks",
     "text": "Inserting Code Chunks\nOption 1: Type it out\n\nOption 2: Visual editor: Insert &gt; Code cell\n\n\nOption 3: Shortcuts:\n\nRStudio: Ctrl+Alt+I"
   },
   {
     "objectID": "slides/analysis._slides.html#demo-echo-option",
     "href": "slides/analysis._slides.html#demo-echo-option",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Demo: echo option",
     "text": "Demo: echo option\necho hides code, but shows results.\n\n\nCode\n```{r}\n#| label: ex-orig\nx = 1:10; y = 11:20\nplot(x, y)\n```\n```{r}\n#| label: ex-hide-code\n#| echo: false\nx = 1:10; y = 11:20\nplot(x, y)\n```\n\nOutput\nex-original Output:\n\nx = 1:10; y = 11:20\nplot(x, y)\n\n\n\n\n\n\n\n\nex-hide-code Output:"
   },
   {
     "objectID": "slides/analysis._slides.html#demo-eval-option",
     "href": "slides/analysis._slides.html#demo-eval-option",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Demo: eval option",
     "text": "Demo: eval option\neval shows code, but does not create results.\n\n\nCode\n```{r}\n#| label: ex-orig\nx = 1:10; y = 11:20\nplot(x, y)\n```\n```{r}\n#| label: ex-not-run\n#| eval: false\nx = 1:10; y = 11:20\nplot(x, y)\n```\n\nOutput\nex-original Output:\n\nx = 1:10; y = 11:20\nplot(x, y)\n\n\n\n\n\n\n\n\nex-not-run Output:\n\nx = 1:10; y = 11:20\nplot(x, y)"
   },
   {
     "objectID": "slides/analysis._slides.html#exercise",
     "href": "slides/analysis._slides.html#exercise",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Exercise",
     "text": "Exercise\nGo to the analysis section on the website do the exercise.\nYou will be pasting some code from a dummy script into code chunks in your document!\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "slides/analysis._slides.html#inline-code-what-why",
     "href": "slides/analysis._slides.html#inline-code-what-why",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Inline code: what & why?",
     "text": "Inline code: what & why?\nInsert results or (quick) calculations into running text, without additional text formatting. \n\nWhy?\n\nreport and describe results reproducibly\nminimizes errors: no manual copy-pasting results\nautomatic updating when data or code changes"
   },
   {
     "objectID": "slides/analysis._slides.html#inline-code-1",
     "href": "slides/analysis._slides.html#inline-code-1",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Inline code",
     "text": "Inline code\nEnclose the R expression using `r `.\nCode:\n\n\nThere are `r nrow(cars)` observations in our data. \n\n\n\nOutput:\n\nThere are 50 observations in our data.\n\n\n\n\n\n\n\nImportant\n\n\nIf using Visual or Source mode, be advised the R expression will only substitute the value held by the variable when the Quarto document is rendered. That is, the value contained within the expression only appears in the output file."
   },
   {
     "objectID": "slides/analysis._slides.html#reference-code-chunk-variables-inline",
     "href": "slides/analysis._slides.html#reference-code-chunk-variables-inline",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Reference Code Chunk Variables Inline",
     "text": "Reference Code Chunk Variables Inline\nCode:\n```{{r}}\n#| label: calc-values\n#| echo: false\nx = 1:10\nx_mu = mean(x)\nx_sd = sd(x)\n```\n\n\nThe _mean_ of **x** is  `r x_mu` and\nthe _standard deviation_ is `r x_sd`.\n\n\n\nOutput:\n\nThe mean of x is 5.5 and the standard deviation is 3.02765."
   },
   {
     "objectID": "slides/analysis._slides.html#inline-code-how",
     "href": "slides/analysis._slides.html#inline-code-how",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Inline code: how?",
     "text": "Inline code: how?\nIn R\nThere are `r sum(penguins$Species=='Adelie')` \npenguins of the Adelie species in the dataset.\nThere are 152 penguins of the \"Adelie\" species in the dataset."
   },
   {
     "objectID": "slides/analysis._slides.html#exercise-1",
     "href": "slides/analysis._slides.html#exercise-1",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Exercise",
     "text": "Exercise\nTake a couple of minutes to play around with the possibilities of inline code!\nGo to the Inline code chapter in the workshop book to complete the exercise.\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "slides/analysis._slides.html#sourcing-external-files-what-why",
     "href": "slides/analysis._slides.html#sourcing-external-files-what-why",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Sourcing external files: what & why?",
     "text": "Sourcing external files: what & why?\nFor example: R and Python scripts, .qmd or .ipynb files.\n\nWhy separate scripts from the manuscript?\n\nminimizes errors: no manual copy-pasting code\neasier code debugging\nmaking the Quarto document easier to digest\nmodular coding = good coding practice"
   },
   {
     "objectID": "slides/analysis._slides.html#sourcing-external-files-how",
     "href": "slides/analysis._slides.html#sourcing-external-files-how",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Sourcing external files: how?",
     "text": "Sourcing external files: how?\n.qmd files: use the chunk option #| file: \"your-script.ext\".\n.ipynb files: import the script as module or run it.\n\n\n\nR:\n```{{r}}\n#| file: \"your-script.R\"\n#| eval: true \n```\n\nPython: \n```{{python}}\n#| echo: false\n%run your-script.py\n```\n Or: Add an empty __init__.py file to your scripts folder and run:\n```{{python}}\n#| echo: false\nfrom your-script import function\n```"
   },
   {
     "objectID": "slides/analysis._slides.html#exercise-2",
     "href": "slides/analysis._slides.html#exercise-2",
-    "title": "APS 2024 Workshop: Reproducible Manuscripts in R",
+    "title": "Reproducible Manuscripts in R Workshop",
     "section": "Exercise",
     "text": "Exercise\n\nThe workshop-materials contain 2 example scripts: do_addition.R and do_addition.py. You will use the R script to include the code in your Quarto document.\n\nGo to the analysis section on the website and complete the exercise!\n\n\n\n\n\n−+\n10:00"
   },

@@ -99,8 +99,7 @@ tinytex::install_tinytex()
 
 ## Hello Quarto!
 
-:::{.columns}
-
+::: columns
 ::: {.column width="50%"}
 -   Next generation publishing system.
 -   Unify and extends the R Markdown ecosystem.
@@ -109,6 +108,7 @@ tinytex::install_tinytex()
 
 ::: {.column width="50%"}
 ![](assets/wasm-images/logo-quarto.png){fig-alt="The Quarto hexagon logo." fig-align="center"}
+:::
 :::
 
 ## Big universe

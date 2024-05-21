@@ -1,5 +1,5 @@
 .countdown {
-  background: #FFCD00;
+  background: inherit;
   position: absolute;
   cursor: pointer;
   font-size: 3rem;
